@@ -43,7 +43,7 @@ An iPhone home-screen app that follows the skit scene by scene and tells you exa
    ```
 
 3. Check `CUE_SHEET.md`: every cue, its sound file and when to play it, grouped by scene.
-4. In `sw.js`, raise the cache number, for example `skit-soundboard-v2` to `skit-soundboard-v3`.
+4. In `sw.js`, raise the cache number, for example `skit-soundboard-v3` to `skit-soundboard-v4`.
 5. Commit and push. Then open the app once on the phone while online so it downloads the new version.
 
 ### Script rules

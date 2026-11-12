@@ -1,6 +1,6 @@
 // Service worker: pre-caches the app and every sound so the show runs with no network.
 // Bump CACHE whenever cues.json or the sounds change, so phones pick up the new files.
-const CACHE = 'skit-soundboard-v2';
+const CACHE = 'skit-soundboard-v3';
 const CORE = ['./', 'index.html', 'cues.json', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png', 'sounds/_silence.mp3'];
 
 self.addEventListener('install', (event) => {

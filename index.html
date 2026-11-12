@@ -516,15 +516,23 @@
 
   // ---------- offline ----------
   const setOffline = (ok, text) => { el.offline.textContent = text; el.offline.classList.toggle('ok', ok); };
+  // Only claim "offline ok" once cues.json and every sound file are really in the cache.
+  async function checkOffline() {
+    try {
+      if (!data || !('caches' in window)) return;
+      const files = ['cues.json', 'sounds/_silence.mp3', ...data.sounds.map((s) => s.file)];
+      const hits = await Promise.all(files.map((f) => caches.match(new URL(f, location.href).href, { ignoreSearch: true })));
+      const ok = hits.every(Boolean);
+      setOffline(ok, ok ? 'offline ok' : 'not saved offline');
+    } catch (e) { setOffline(false, 'not saved offline'); }
+  }
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.addEventListener('message', (e) => { if (e.data && e.data.type === 'cached') setOffline(true, 'offline ok'); });
-    navigator.serviceWorker.register('sw.js').then(async () => {
-      const keys = await caches.keys();
-      if (keys.some((k) => k.startsWith('skit-soundboard-'))) setOffline(true, 'offline ok');
-    }).catch((e) => console.warn('sw', e));
+    navigator.serviceWorker.addEventListener('message', (e) => { if (e.data && e.data.type === 'cached') checkOffline(); });
+    navigator.serviceWorker.register('sw.js').catch((e) => console.warn('sw', e));
+    setTimeout(checkOffline, 3000);
   }
 
-  loadData().then(() => { el.armbtn.disabled = false; }).catch((e) => {
+  loadData().then(() => { el.armbtn.disabled = false; checkOffline(); }).catch((e) => {
     el.armmsg.textContent = e.message;
     el.armbtn.textContent = 'No script loaded';
   });
