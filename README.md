@@ -45,7 +45,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
    ```
 
 3. Check `CUE_SHEET.md`: every cue, its sound file and when to play it, grouped by scene.
-4. In `sw.js`, raise the cache number, for example `skit-soundboard-v4` to `skit-soundboard-v5`.
+4. In `sw.js`, raise the cache number, for example `skit-soundboard-v5` to `skit-soundboard-v6`.
 5. Commit and push. This updates the GitHub Pages copy.
 6. Update the Netlify copy by deploying only the app files: `index.html`, `sw.js`, `manifest.webmanifest`, `cues.json`, the three icons and `sounds/`. Leave out `input/`, `tools/`, `CUE_SHEET.md` and `.git`. Put them in one folder and run:
 

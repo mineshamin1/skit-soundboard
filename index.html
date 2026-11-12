@@ -124,7 +124,6 @@
   #arm { position: fixed; inset: 0; background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 32px 24px calc(var(--sab) + 24px); text-align: center; z-index: 10; }
   #arm h1 { font-size: 24px; margin: 0; font-weight: 700; }
   #arm p { margin: 0; color: var(--muted); font-size: 14px; max-width: 320px; }
-  #arm ul { text-align: left; color: var(--muted); font-size: 15px; line-height: 1.7; margin: 0; padding-left: 22px; max-width: 320px; }
   #armbtn { width: 100%; max-width: 320px; height: 80px; background: var(--green); color: var(--green-dark); font-size: 21px; font-weight: 700; }
   #armbtn:disabled { background: var(--panel-2); color: var(--muted); }
   #prog { width: 100%; max-width: 320px; height: 6px; background: var(--panel-2); border-radius: 3px; overflow: hidden; }
@@ -137,13 +136,6 @@
 <div id="arm">
   <h1 id="armtitle">Skit Soundboard</h1>
   <p id="armsetting"></p>
-  <ul>
-    <li>Ringer switch <b>on</b> (not silent)</li>
-    <li>Volume all the way up</li>
-    <li>Do Not Disturb on</li>
-    <li>Auto-Lock set to Never</li>
-    <li>Cable plugged into the speakers</li>
-  </ul>
   <button id="armbtn" disabled>Tap to load sounds</button>
   <div id="prog"><div></div></div>
   <div id="armmsg"></div>
@@ -230,7 +222,7 @@
     document.title = data.title;
     el.title.textContent = data.title;
     el.armtitle.textContent = data.title;
-    el.armsetting.textContent = (data.setting ? data.setting + ' ' : '') + 'Before the show, check the phone:';
+    el.armsetting.textContent = data.setting || '';
     try {
       const s = JSON.parse(localStorage.getItem(storeKey) || 'null');
       if (s && s.cur >= 0 && s.cur <= data.cues.length && s.view >= 1 && s.view <= data.scenes.length) { cur = s.cur; view = s.view; }
