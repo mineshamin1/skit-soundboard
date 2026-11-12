@@ -27,6 +27,7 @@
     font: 16px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif;
     -webkit-user-select: none; user-select: none; touch-action: manipulation; overscroll-behavior: none; }
   #app { height: 100dvh; display: flex; flex-direction: column; padding: calc(var(--sat) + 6px) 10px calc(var(--sab) + 4px); gap: 8px; }
+  html.has-host-badge #app { padding-bottom: calc(var(--sab) + var(--host-badge-h, 64px)); }
   .screen { display: none; flex: 1; min-height: 0; flex-direction: column; gap: 8px; }
   .screen.active { display: flex; }
   button { font: inherit; color: inherit; border: 0; background: var(--panel); border-radius: 12px; cursor: pointer; -webkit-user-select: none; user-select: none; }
@@ -531,6 +532,16 @@
     navigator.serviceWorker.register('sw.js').catch((e) => console.warn('sw', e));
     setTimeout(checkOffline, 3000);
   }
+
+  // Some free hosts add a fixed badge in the bottom corner. Leave room for it so it never covers Stop or the tabs.
+  function fitHostBadge() {
+    const f = document.getElementById('nl-badge-frame');
+    const h = f ? Math.ceil(f.getBoundingClientRect().height) : 0;
+    document.documentElement.classList.toggle('has-host-badge', h > 0);
+    if (h > 0) document.documentElement.style.setProperty('--host-badge-h', h + 'px');
+  }
+  new MutationObserver(fitHostBadge).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
+  window.addEventListener('resize', fitHostBadge);
 
   loadData().then(() => { el.armbtn.disabled = false; checkOffline(); }).catch((e) => {
     el.armmsg.textContent = e.message;

@@ -2,11 +2,13 @@
 
 An iPhone home-screen app that follows the skit scene by scene and tells you exactly when to press play.
 
-**Open on the iPhone:** https://mineshamin1.github.io/skit-soundboard/
+**Open on the iPhone:** https://diwali-skit-sounds.netlify.app
+
+The same app is also served from GitHub Pages at https://mineshamin1.github.io/skit-soundboard/.
 
 ## Put it on the iPhone (one time)
 
-1. Open the link above in **Safari** on the iPhone.
+1. Open the Netlify link above in **Safari** on the iPhone.
 2. Tap "Tap to load sounds" once and wait until the badge in the top right says "offline ok".
 3. Tap Share, then "Add to Home Screen".
 4. Turn on airplane mode and open it from the home screen icon to check it still works.
@@ -43,8 +45,15 @@ An iPhone home-screen app that follows the skit scene by scene and tells you exa
    ```
 
 3. Check `CUE_SHEET.md`: every cue, its sound file and when to play it, grouped by scene.
-4. In `sw.js`, raise the cache number, for example `skit-soundboard-v3` to `skit-soundboard-v4`.
-5. Commit and push. Then open the app once on the phone while online so it downloads the new version.
+4. In `sw.js`, raise the cache number, for example `skit-soundboard-v4` to `skit-soundboard-v5`.
+5. Commit and push. This updates the GitHub Pages copy.
+6. Update the Netlify copy by deploying only the app files: `index.html`, `sw.js`, `manifest.webmanifest`, `cues.json`, the three icons and `sounds/`. Leave out `input/`, `tools/`, `CUE_SHEET.md` and `.git`. Put them in one folder and run:
+
+   ```bash
+   npx netlify-cli deploy --prod --dir <that folder> --site diwali-skit-sounds
+   ```
+
+7. Open the app once on the phone while online so it downloads the new version.
 
 ### Script rules
 
