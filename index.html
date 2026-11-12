@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Skit Soundboard</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Soundboard">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<style>
+  :root {
+    --bg: #0b0b0b; --panel: #1c1c1a; --panel-2: #2c2c2a;
+    --text: #f1efe8; --muted: #b4b2a9; --dim: #5f5e5a;
+    --green: #1d9e75; --green-dark: #04342c; --green-mid: #085041; --green-light: #9fe1cb;
+    --amber-bg: #412402; --amber: #fac775; --amber-light: #faeeda; --amber-hi: #633806;
+    --red: #a32d2d; --red-light: #fcebeb; --teal: #5dcaa5;
+    --purple-dark: #26215c; --purple: #3c3489; --purple-mid: #534ab7; --purple-light: #cecbf6; --purple-faint: #afa9ec; --purple-text: #eeedfe;
+    --sat: env(safe-area-inset-top, 0px); --sab: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font: 16px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif;
+    -webkit-user-select: none; user-select: none; touch-action: manipulation; overscroll-behavior: none; }
+  #app { height: 100dvh; display: flex; flex-direction: column; padding: calc(var(--sat) + 6px) 10px calc(var(--sab) + 4px); gap: 8px; }
+  .screen { display: none; flex: 1; min-height: 0; flex-direction: column; gap: 8px; }
+  .screen.active { display: flex; }
+  button { font: inherit; color: inherit; border: 0; background: var(--panel); border-radius: 12px; cursor: pointer; -webkit-user-select: none; user-select: none; }
+  button:active { filter: brightness(1.2); }
+  svg.i { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+  header { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted); padding: 0 4px; gap: 8px; }
+  header #title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: var(--panel-2); color: var(--muted); white-space: nowrap; }
+  .badge.ok { background: var(--green-mid); color: var(--green-light); }
+
+  /* scene bar */
+  .scenebar { display: flex; gap: 6px; align-items: stretch; }
+  .scenebar > button { width: 44px; display: flex; align-items: center; justify-content: center; color: var(--muted); }
+  .scenebar > button:disabled { opacity: .3; }
+  .scenepill { flex: 1; min-width: 0; background: var(--purple-dark); border-radius: 12px; padding: 5px 12px; line-height: 1.25; }
+  .scenepill .k { font-size: 11px; color: var(--purple-faint); }
+  .scenepill .t { font-size: 15px; font-weight: 600; color: var(--purple-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* script */
+  #script { position: relative; flex: 1; min-height: 0; overflow-y: auto; background: var(--panel); border-radius: 14px; padding: 12px 14px; font-size: 17px; line-height: 1.5; -webkit-overflow-scrolling: touch; }
+  #script p { margin: 0 0 11px; color: var(--muted); }
+  #script p.done, #script p.done .spk { color: var(--dim); }
+  #script p.current { color: var(--text); }
+  #script .spk { color: var(--teal); font-weight: 600; margin-right: 6px; }
+  #script .note, #script p.stage { font-style: italic; }
+  #script .note { color: var(--dim); margin-right: 4px; }
+  #script p.cueonly { margin-top: -4px; }
+  #script .nextscene { color: #7f77dd; font-size: 13px; border-top: 1px solid var(--panel-2); padding-top: 8px; margin-top: 4px; }
+  #script .spacer { height: 40%; }
+  .trig { background: var(--amber-hi); color: var(--amber); border-radius: 4px; padding: 0 3px; }
+  .chip { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .03em; padding: 2px 8px; border-radius: 6px; margin: 0 4px 0 0; white-space: nowrap; background: var(--panel-2); color: var(--muted); }
+  .chip.done { color: var(--dim); background: #232321; font-weight: 500; }
+  .chip.next { background: var(--green); color: var(--green-dark); font-size: 13px; padding: 3px 10px; }
+  .chip.missing { background: var(--red); color: var(--red-light); }
+
+  #trigger { background: var(--amber-bg); color: var(--amber); border-radius: 12px; padding: 8px 12px; font-size: 15px; line-height: 1.35; }
+  #trigger b { color: var(--amber-light); font-weight: 600; }
+  #trigger .who { font-weight: 700; }
+  #trigger.info { background: var(--purple-dark); color: var(--purple-faint); }
+  #trigger.info b { color: var(--purple-text); }
+
+  #play { height: 86px; flex: none; background: var(--green); color: var(--green-dark); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; width: 100%; }
+  #play .big { font-size: 24px; font-weight: 700; display: flex; align-items: center; gap: 10px; max-width: 100%; padding: 0 10px; }
+  #play .big span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #play .big svg { width: 26px; height: 26px; fill: currentColor; flex: none; }
+  #play .sub { font-size: 12px; color: var(--green-mid); }
+  #play.flash { filter: brightness(1.35); }
+  #play.advance { background: var(--purple-mid); color: var(--purple-text); }
+  #play.advance .sub { color: var(--purple-light); }
+  #play.end { background: var(--panel-2); color: var(--muted); }
+  #play.end .sub { color: var(--dim); }
+  #play.missing { background: var(--red); color: var(--red-light); }
+
+  .padlabel { font-size: 11px; color: #888780; padding: 0 2px; margin-bottom: -4px; }
+  #pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  #pad button, .grid button { height: 48px; background: var(--purple); color: var(--purple-light); font-size: 14px; padding: 2px 4px; line-height: 1.15; }
+  #pad button.match { box-shadow: inset 0 0 0 2px var(--green); }
+  #pad button.playing, .grid button.playing { background: var(--purple-mid); color: #fff; }
+  #pad .empty { grid-column: 1 / -1; font-size: 13px; color: var(--dim); text-align: center; padding: 12px 0; background: var(--panel); border-radius: 12px; }
+
+  .row { display: grid; grid-template-columns: 1fr 1.6fr; gap: 6px; }
+  .row button { height: 48px; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 14px; color: var(--muted); }
+  .stopbtn { background: var(--red) !important; color: var(--red-light) !important; font-weight: 600; font-size: 15px !important; }
+
+  nav { display: flex; gap: 8px; }
+  nav button { flex: 1; height: 34px; font-size: 13px; color: var(--dim); background: transparent; border-radius: 10px; }
+  nav button.active { color: var(--text); background: var(--panel); }
+
+  /* scenes screen */
+  #scenelist { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+  .listhead { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--muted); padding: 2px 4px; }
+  .listhead button { font-size: 12px; padding: 6px 10px; color: var(--muted); background: var(--panel-2); border-radius: 8px; }
+  .listhead button.confirm { background: var(--red); color: var(--red-light); }
+  .scard { background: var(--panel); border-radius: 12px; overflow: hidden; flex: none; }
+  .scard.cur { box-shadow: inset 0 0 0 1.5px var(--purple-mid); }
+  .shead { display: flex; justify-content: space-between; gap: 8px; padding: 10px 12px; font-size: 14px; color: #d3d1c7; }
+  .shead .c { color: #888780; font-size: 12px; white-space: nowrap; }
+  .scard.cur .shead { background: var(--purple-dark); color: var(--purple-text); }
+  .scard.cur .shead .c { color: var(--purple-faint); }
+  .scard.empty .shead { color: #888780; }
+  .cue { display: grid; grid-template-columns: 24px 1fr; gap: 2px 8px; padding: 8px 12px; border-top: 1px solid var(--panel-2); font-size: 14px; color: var(--muted); }
+  .cue .n { color: var(--dim); font-variant-numeric: tabular-nums; }
+  .cue .name { color: var(--text); font-weight: 600; }
+  .cue .when { grid-column: 2; font-size: 12px; color: #888780; }
+  .cue.done { opacity: .5; }
+  .cue.next { background: var(--green-mid); }
+  .cue.next .name, .cue.next .n, .cue.next .when { color: var(--green-light); }
+  .sectitle { font-size: 12px; color: var(--dim); padding: 6px 4px 0; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding-bottom: 6px; }
+  .grid button { height: 44px; font-size: 12px; background: var(--panel); color: #d3d1c7; }
+
+  /* arm overlay */
+  #arm { position: fixed; inset: 0; background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 32px 24px calc(var(--sab) + 24px); text-align: center; z-index: 10; }
+  #arm h1 { font-size: 24px; margin: 0; font-weight: 700; }
+  #arm p { margin: 0; color: var(--muted); font-size: 14px; max-width: 320px; }
+  #arm ul { text-align: left; color: var(--muted); font-size: 15px; line-height: 1.7; margin: 0; padding-left: 22px; max-width: 320px; }
+  #armbtn { width: 100%; max-width: 320px; height: 80px; background: var(--green); color: var(--green-dark); font-size: 21px; font-weight: 700; }
+  #armbtn:disabled { background: var(--panel-2); color: var(--muted); }
+  #prog { width: 100%; max-width: 320px; height: 6px; background: var(--panel-2); border-radius: 3px; overflow: hidden; }
+  #prog > div { height: 100%; width: 0; background: var(--green); transition: width .15s; }
+  #armmsg { font-size: 13px; color: var(--dim); min-height: 18px; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<div id="arm">
+  <h1 id="armtitle">Skit Soundboard</h1>
+  <p id="armsetting"></p>
+  <ul>
+    <li>Ringer switch <b>on</b> (not silent)</li>
+    <li>Volume all the way up</li>
+    <li>Do Not Disturb on</li>
+    <li>Auto-Lock set to Never</li>
+    <li>Cable plugged into the speakers</li>
+  </ul>
+  <button id="armbtn" disabled>Tap to load sounds</button>
+  <div id="prog"><div></div></div>
+  <div id="armmsg"></div>
+</div>
+
+<div id="app">
+  <header>
+    <span id="counter">Cue –</span>
+    <span id="title"></span>
+    <span id="offline" class="badge">online</span>
+  </header>
+
+  <section id="show" class="screen active">
+    <div class="scenebar">
+      <button id="prevscene" aria-label="Previous scene"><svg class="i" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <div class="scenepill"><div class="k" id="scenek">Scene</div><div class="t" id="scenet"></div></div>
+      <button id="nextscene" aria-label="Next scene"><svg class="i" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+    <div id="script"></div>
+    <div id="trigger"></div>
+    <button id="play">
+      <span class="big"><svg id="playicon" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg><span id="playname">–</span></span>
+      <span class="sub" id="playsub"></span>
+    </button>
+    <div class="padlabel" id="padlabel"></div>
+    <div id="pad"></div>
+    <div class="row">
+      <button id="back"><svg class="i" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-2"/></svg>Back</button>
+      <button id="stop" class="stopbtn"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2" fill="currentColor" stroke="none"/></svg>Stop all</button>
+    </div>
+  </section>
+
+  <section id="scenes" class="screen">
+    <div id="scenelist">
+      <div class="listhead"><span>Tap a scene or cue to jump there</span><button id="reset">Reset to start</button></div>
+      <div id="cards"></div>
+      <div class="sectitle">Every sound · plays now, cue stays put</div>
+      <div class="grid" id="grid"></div>
+    </div>
+    <button id="stop2" class="stopbtn" style="height:48px;">Stop all</button>
+  </section>
+
+  <nav>
+    <button data-screen="show" class="active">Show</button>
+    <button data-screen="scenes">Scenes</button>
+  </nav>
+</div>
+
+<audio id="unmute" loop playsinline preload="auto" src="sounds/_silence.mp3"></audio>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const el = {
+    arm: $('#arm'), armbtn: $('#armbtn'), prog: $('#prog > div'), armmsg: $('#armmsg'), armtitle: $('#armtitle'), armsetting: $('#armsetting'),
+    counter: $('#counter'), title: $('#title'), offline: $('#offline'),
+    prevscene: $('#prevscene'), nextscene: $('#nextscene'), scenek: $('#scenek'), scenet: $('#scenet'),
+    script: $('#script'), trigger: $('#trigger'), play: $('#play'), playname: $('#playname'), playsub: $('#playsub'), playicon: $('#playicon'),
+    padlabel: $('#padlabel'), pad: $('#pad'), back: $('#back'), stop: $('#stop'), stop2: $('#stop2'),
+    cards: $('#cards'), grid: $('#grid'), reset: $('#reset'), unmute: $('#unmute'),
+  };
+
+  let data = null;
+  const buffers = new Map();   // soundId -> AudioBuffer
+  const live = new Map();      // soundId -> Set of playing sources
+  let ctx = null, master = null, wakeLock = null;
+  let cur = 0;                 // index of the NEXT cue to fire (0..cues.length)
+  let view = 1;                // scene number (1-based) being shown
+  let lastPlayAt = 0;
+  let storeKey = 'skit-soundboard';
+
+  const sound = (id) => data.sounds.find((s) => s.id === id);
+  const scene = (n) => data.scenes[n - 1];
+  const label = (cue) => { const s = cue.soundId && sound(cue.soundId); return s ? s.label : cue.placeholder + ' (missing)'; };
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const firstCueFrom = (sceneN) => { const i = data.cues.findIndex((c) => c.scene >= sceneN); return i < 0 ? data.cues.length : i; };
+
+  // ---------- data ----------
+  async function loadData() {
+    const r = await fetch('cues.json', { cache: 'no-cache' });
+    if (!r.ok) throw new Error('cues.json is missing. Run tools/build_cues.py first.');
+    data = await r.json();
+    storeKey = 'skit-soundboard:' + data.title;
+    document.title = data.title;
+    el.title.textContent = data.title;
+    el.armtitle.textContent = data.title;
+    el.armsetting.textContent = (data.setting ? data.setting + ' ' : '') + 'Before the show, check the phone:';
+    try {
+      const s = JSON.parse(localStorage.getItem(storeKey) || 'null');
+      if (s && s.cur >= 0 && s.cur <= data.cues.length && s.view >= 1 && s.view <= data.scenes.length) { cur = s.cur; view = s.view; }
+    } catch (e) {}
+  }
+  function save() { try { localStorage.setItem(storeKey, JSON.stringify({ cur, view })); } catch (e) {} }
+
+  // ---------- audio ----------
+  async function arm() {
+    el.armbtn.disabled = true;
+    el.armbtn.textContent = 'Loading sounds…';
+    try {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      master = ctx.createGain();
+      master.connect(ctx.destination);
+      await ctx.resume();
+      // A looping silent <audio> puts iOS in media-playback mode, so the ringer switch can't mute Web Audio.
+      try { el.unmute.volume = 0.01; await el.unmute.play(); } catch (e) { console.warn('unmute', e); }
+      let done = 0;
+      await Promise.all(data.sounds.map(async (s) => {
+        try {
+          const res = await fetch(s.file);
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          const arr = await res.arrayBuffer();
+          buffers.set(s.id, await new Promise((ok, bad) => ctx.decodeAudioData(arr, ok, bad)));
+        } catch (e) {
+          console.error('Could not load', s.file, e);
+          el.armmsg.textContent = 'Could not load ' + s.file;
+        }
+        done++;
+        el.prog.style.width = Math.round((done / data.sounds.length) * 100) + '%';
+      }));
+      requestWakeLock();
+      el.arm.classList.add('hidden');
+      render();
+    } catch (e) {
+      el.armmsg.textContent = 'Audio failed to start: ' + e.message;
+      el.armbtn.disabled = false;
+      el.armbtn.textContent = 'Try again';
+    }
+  }
+  function playSound(id) {
+    const buf = buffers.get(id);
+    if (!buf || !ctx) return;
+    if (ctx.state !== 'running') ctx.resume();
+    stopSound(id); // restart instead of layering the same sound
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.connect(master);
+    const set = live.get(id) || new Set();
+    set.add(src);
+    live.set(id, set);
+    src.onended = () => { set.delete(src); markPlaying(); };
+    src.start();
+    markPlaying();
+  }
+  function stopSound(id) {
+    const set = live.get(id);
+    if (!set) return;
+    for (const s of set) { try { s.stop(); } catch (e) {} }
+    set.clear();
+  }
+  function stopAll() { for (const id of live.keys()) stopSound(id); markPlaying(); }
+  function markPlaying() {
+    document.querySelectorAll('[data-sound]').forEach((b) => {
+      const set = live.get(b.dataset.sound);
+      b.classList.toggle('playing', !!(set && set.size));
+    });
+  }
+  async function requestWakeLock() {
+    try {
+      if ('wakeLock' in navigator) {
+        wakeLock = await navigator.wakeLock.request('screen');
+        wakeLock.addEventListener('release', () => { wakeLock = null; });
+      }
+    } catch (e) { console.warn('wake lock', e.message); }
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState !== 'visible' || !ctx) return;
+    if (ctx.state !== 'running') ctx.resume();
+    if (!wakeLock) requestWakeLock();
+    if (el.unmute.paused) el.unmute.play().catch(() => {});
+  });
+
+  // ---------- show logic ----------
+  // Play does one of three things:
+  //  1. the next cue is in the scene on screen  -> play it and advance
+  //  2. this scene has no more cues             -> move to the next scene (no sound)
+  //  3. end of the script                       -> nothing
+  function primary() {
+    const now = Date.now();
+    if (now - lastPlayAt < 700) return; // double-tap guard
+    lastPlayAt = now;
+    const next = data.cues[cur];
+    if (next && next.scene === view) {
+      if (next.soundId) playSound(next.soundId);
+      cur++;
+    } else if (view < data.scenes.length) {
+      view++;
+    } else {
+      return;
+    }
+    save();
+    el.play.classList.add('flash');
+    setTimeout(() => el.play.classList.remove('flash'), 150);
+    render();
+  }
+  function goScene(n) {
+    view = Math.min(Math.max(n, 1), data.scenes.length);
+    cur = firstCueFrom(view);
+    save();
+    render();
+  }
+  function back() {
+    if (cur > 0) { cur--; view = data.cues[cur].scene; }
+    else if (view > 1) { view--; }
+    save();
+    render();
+  }
+  function jumpCue(i) { cur = i; view = data.cues[i].scene; save(); showScreen('show'); }
+
+  // ---------- rendering ----------
+  function render() {
+    const sc = scene(view);
+    const total = data.cues.length;
+    const next = data.cues[cur];
+    const nextHere = next && next.scene === view ? next : null;
+    el.counter.textContent = cur < total ? `Cue ${cur + 1} of ${total}` : `All ${total} cues done`;
+
+    // scene bar
+    el.scenek.textContent = `Scene ${sc.number} · ${view} of ${data.scenes.length}`;
+    el.scenet.textContent = sc.title;
+    el.prevscene.disabled = view <= 1;
+    el.nextscene.disabled = view >= data.scenes.length;
+
+    // script panel: only this scene
+    const prev = data.cues[cur - 1];
+    const lastDoneLine = prev && prev.scene === view ? prev.lineIndex : -1;
+    const trig = nextHere && nextHere.trigger.kind === 'after_words' ? nextHere.trigger : null;
+    let html = '';
+    data.lines.forEach((line, li) => {
+      if (line.scene !== view) return;
+      const textSegs = line.segments.filter((s) => s.type === 'text');
+      const cls = [];
+      if (li < lastDoneLine || (li === lastDoneLine && (!nextHere || nextHere.lineIndex !== li))) cls.push('done');
+      if (!nextHere && lastDoneLine >= 0 && li <= lastDoneLine) cls.push('done');
+      if (nextHere && (li === nextHere.lineIndex || (trig && li === trig.lineIndex))) cls.push('current');
+      if (!line.speaker) cls.push('stage');
+      if (!textSegs.length && !line.speaker) cls.push('cueonly');
+      let inner = line.speaker ? `<span class="spk">${esc(line.speaker)}</span>` : '';
+      if (line.note) inner += `<span class="note">${esc(line.note)}</span>`;
+      line.segments.forEach((seg, si) => {
+        if (seg.type === 'text') {
+          inner += trig && trig.lineIndex === li && trig.segIndex === si ? highlightTail(seg.text, trig.words) : esc(seg.text);
+        } else {
+          const cue = data.cues[seg.n - 1];
+          const state = seg.n - 1 < cur ? 'done' : (seg.n - 1 === cur ? 'next' : 'upcoming');
+          inner += `<span class="chip ${state}${cue.soundId ? '' : ' missing'}" id="chip-${seg.n}">${seg.n} ${esc(label(cue).toUpperCase())}</span>`;
+        }
+      });
+      html += `<p class="${cls.join(' ')}">${inner}</p>`;
+    });
+    const nsc = scene(view + 1);
+    html += nsc ? `<p class="nextscene">Next: Scene ${nsc.number} · ${esc(nsc.title)}</p>` : `<p class="nextscene">End of the skit</p>`;
+    html += '<div class="spacer"></div>';
+    el.script.innerHTML = html;
+    requestAnimationFrame(() => {
+      const target = nextHere ? document.getElementById('chip-' + nextHere.n) : null;
+      el.script.scrollTop = target ? Math.max(0, target.offsetTop - el.script.clientHeight * 0.45) : (prev && prev.scene === view ? el.script.scrollHeight : 0);
+    });
+
+    // trigger strip + play button
+    el.trigger.className = '';
+    el.play.className = '';
+    el.playicon.style.display = '';
+    if (nextHere) {
+      const t = nextHere.trigger;
+      if (t.kind === 'scene_start') {
+        el.trigger.innerHTML = `Play as Scene ${sc.number} starts` + (t.speaker ? `, before <span class="who">${esc(t.speaker)}</span> speaks` : '');
+      } else if (t.kind === 'after_cue') {
+        el.trigger.innerHTML = `Play straight after <b>${esc(t.label)}</b> (cue ${t.cueN})`;
+      } else if (t.speaker) {
+        el.trigger.innerHTML = `Play right after <span class="who">${esc(t.speaker)}</span> says <b>“${esc(t.words)}”</b>`;
+      } else {
+        el.trigger.innerHTML = `Play right after the action: <b>${esc(t.words.replace(/^[.(\s]+|[)\s]+$/g, ''))}</b>`;
+      }
+      el.playname.textContent = label(nextHere);
+      const after = data.cues[cur + 1];
+      el.playsub.textContent = `cue ${nextHere.n}` + (after && after.trigger.kind === 'after_cue' ? ` · then ${label(after)}` : '');
+      if (!nextHere.soundId) el.play.classList.add('missing');
+    } else if (view < data.scenes.length) {
+      const ns = scene(view + 1);
+      el.trigger.className = 'info';
+      el.trigger.innerHTML = sc.cueIds.length
+        ? `Scene ${sc.number} sounds are done. Follow the script and tap when <b>Scene ${ns.number}</b> starts.`
+        : `Scene ${sc.number} has no sounds. Follow along and tap when <b>Scene ${ns.number}</b> starts.`;
+      el.play.classList.add('advance');
+      el.playicon.style.display = 'none';
+      el.playname.textContent = `Go to Scene ${ns.number}`;
+      el.playsub.textContent = ns.title + ' · no sound';
+    } else {
+      el.trigger.className = 'info';
+      el.trigger.textContent = 'That was the last sound. Use Back or Scenes to go again.';
+      el.play.classList.add('end');
+      el.playicon.style.display = 'none';
+      el.playname.textContent = 'Show complete';
+      el.playsub.textContent = '';
+    }
+
+    // quick pad
+    el.padlabel.textContent = `Scene ${sc.number} sounds · play now, cue stays put`;
+    el.pad.innerHTML = sc.soundIds.length
+      ? sc.soundIds.map((id) => `<button data-sound="${id}" class="${nextHere && nextHere.soundId === id ? 'match' : ''}">${esc(sound(id).label)}</button>`).join('')
+      : '<div class="empty">No sounds in this scene</div>';
+
+    renderScenes();
+    markPlaying();
+  }
+  function highlightTail(text, words) {
+    const clean = words.replace(/^\.\.\./, '').trim();
+    const idx = clean ? text.lastIndexOf(clean) : -1;
+    if (idx < 0) return esc(text);
+    return esc(text.slice(0, idx)) + `<span class="trig">${esc(clean)}</span>` + esc(text.slice(idx + clean.length));
+  }
+  function renderScenes() {
+    el.cards.innerHTML = data.scenes.map((s) => {
+      const isCur = s.n === view;
+      const count = s.cueIds.length ? `${s.cueIds.length} cue${s.cueIds.length > 1 ? 's' : ''}` : 'no sounds';
+      let rows = '';
+      if (isCur) {
+        rows = s.cueIds.map((n) => {
+          const c = data.cues[n - 1];
+          const t = c.trigger;
+          const when = t.kind === 'scene_start' ? 'start of scene'
+            : t.kind === 'after_cue' ? `right after cue ${t.cueN}`
+            : `${t.speaker ? esc(t.speaker) + ': ' : ''}“${esc(t.words)}”`;
+          const state = n - 1 < cur ? 'done' : (n - 1 === cur ? 'next' : '');
+          return `<div class="cue ${state}" data-cue="${n - 1}"><span class="n">${n}</span><span class="name">${esc(label(c))}</span><span class="when">${when}</span></div>`;
+        }).join('');
+      }
+      return `<div class="scard ${isCur ? 'cur' : ''} ${s.cueIds.length ? '' : 'empty'}"><div class="shead" data-scene="${s.n}"><span>${s.number} · ${esc(s.title)}</span><span class="c">${count}</span></div>${rows}</div>`;
+    }).join('');
+    if (!el.grid.childElementCount) {
+      el.grid.innerHTML = data.sounds.map((s) => `<button data-sound="${s.id}">${esc(s.label)}</button>`).join('');
+    }
+  }
+  function showScreen(name) {
+    document.querySelectorAll('.screen').forEach((s) => s.classList.toggle('active', s.id === name));
+    document.querySelectorAll('nav button').forEach((b) => b.classList.toggle('active', b.dataset.screen === name));
+    render();
+    if (name === 'scenes') {
+      const c = el.cards.querySelector('.scard.cur');
+      if (c) c.scrollIntoView({ block: 'center' });
+    }
+  }
+
+  // ---------- events ----------
+  el.armbtn.addEventListener('click', arm);
+  el.play.addEventListener('pointerdown', (e) => { e.preventDefault(); primary(); });
+  el.prevscene.addEventListener('click', () => goScene(view - 1));
+  el.nextscene.addEventListener('click', () => goScene(view + 1));
+  el.back.addEventListener('click', back);
+  el.stop.addEventListener('click', stopAll);
+  el.stop2.addEventListener('click', stopAll);
+  document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click', () => showScreen(b.dataset.screen)));
+  el.pad.addEventListener('click', (e) => { const b = e.target.closest('[data-sound]'); if (b) playSound(b.dataset.sound); });
+  el.grid.addEventListener('click', (e) => { const b = e.target.closest('[data-sound]'); if (b) playSound(b.dataset.sound); });
+  el.cards.addEventListener('click', (e) => {
+    const row = e.target.closest('[data-cue]');
+    if (row) return jumpCue(parseInt(row.dataset.cue, 10));
+    const head = e.target.closest('[data-scene]');
+    if (head) { const n = parseInt(head.dataset.scene, 10); if (n === view) showScreen('show'); else { goScene(n); renderScenes(); } }
+  });
+  let resetArmed = null;
+  const unarmReset = () => { resetArmed = null; el.reset.textContent = 'Reset to start'; el.reset.classList.remove('confirm'); };
+  el.reset.addEventListener('click', () => {
+    if (resetArmed) { clearTimeout(resetArmed); unarmReset(); cur = 0; view = 1; save(); showScreen('show'); return; }
+    el.reset.textContent = 'Tap again to confirm';
+    el.reset.classList.add('confirm');
+    resetArmed = setTimeout(unarmReset, 2500);
+  });
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+  document.addEventListener('gesturestart', (e) => e.preventDefault());
+
+  // ---------- offline ----------
+  const setOffline = (ok, text) => { el.offline.textContent = text; el.offline.classList.toggle('ok', ok); };
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('message', (e) => { if (e.data && e.data.type === 'cached') setOffline(true, 'offline ok'); });
+    navigator.serviceWorker.register('sw.js').then(async () => {
+      const keys = await caches.keys();
+      if (keys.some((k) => k.startsWith('skit-soundboard-'))) setOffline(true, 'offline ok');
+    }).catch((e) => console.warn('sw', e));
+  }
+
+  loadData().then(() => { el.armbtn.disabled = false; }).catch((e) => {
+    el.armmsg.textContent = e.message;
+    el.armbtn.textContent = 'No script loaded';
+  });
+})();
+</script>
+</body>
+</html>

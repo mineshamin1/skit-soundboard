@@ -1,0 +1,2023 @@
+{
+ "title": "Diwali School Skit",
+ "setting": "Setting: Guru Gul Paathshaala, Ghoomerabad. A comedy skit about a teacher and his students.",
+ "scenes": [
+  {
+   "n": 1,
+   "number": 1,
+   "title": "Welcome to Guru Gul Paathshaala",
+   "cueIds": [
+    1,
+    2,
+    3
+   ],
+   "soundIds": [
+    "doordarshan",
+    "haha",
+    "punjabi"
+   ],
+   "firstLine": 0,
+   "lastLine": 16
+  },
+  {
+   "n": 2,
+   "number": 2,
+   "title": "Lakhan and the Homework Excuse",
+   "cueIds": [
+    4,
+    5
+   ],
+   "soundIds": [
+    "haha",
+    "golmaal"
+   ],
+   "firstLine": 17,
+   "lastLine": 33
+  },
+  {
+   "n": 3,
+   "number": 3,
+   "title": "Money or Intelligence?",
+   "cueIds": [
+    6,
+    7
+   ],
+   "soundIds": [
+    "haha",
+    "smart-boy"
+   ],
+   "firstLine": 34,
+   "lastLine": 40
+  },
+  {
+   "n": 4,
+   "number": 4,
+   "title": "The Fastest Bird and a Dangerous Father",
+   "cueIds": [
+    8,
+    9
+   ],
+   "soundIds": [
+    "gunshot",
+    "haha"
+   ],
+   "firstLine": 41,
+   "lastLine": 48
+  },
+  {
+   "n": 5,
+   "number": 5,
+   "title": "The Scientist's Name",
+   "cueIds": [
+    10
+   ],
+   "soundIds": [
+    "south-indian"
+   ],
+   "firstLine": 49,
+   "lastLine": 54
+  },
+  {
+   "n": 6,
+   "number": 6,
+   "title": "Gandhi Ji's Birthday",
+   "cueIds": [],
+   "soundIds": [],
+   "firstLine": 55,
+   "lastLine": 60
+  },
+  {
+   "n": 7,
+   "number": 7,
+   "title": "The Donkey and Understanding",
+   "cueIds": [
+    11
+   ],
+   "soundIds": [
+    "donkey"
+   ],
+   "firstLine": 61,
+   "lastLine": 64
+  },
+  {
+   "n": 8,
+   "number": 8,
+   "title": "Four forms of tense (alternate)",
+   "cueIds": [
+    12,
+    13
+   ],
+   "soundIds": [
+    "punjabi-style",
+    "haha"
+   ],
+   "firstLine": 65,
+   "lastLine": 72
+  },
+  {
+   "n": 9,
+   "number": 9,
+   "title": "Qutub Minar or a Sick Dog?",
+   "cueIds": [
+    14
+   ],
+   "soundIds": [
+    "haha"
+   ],
+   "firstLine": 73,
+   "lastLine": 78
+  },
+  {
+   "n": 10,
+   "number": 10,
+   "title": "English Lessons with Kaleshi",
+   "cueIds": [
+    15
+   ],
+   "soundIds": [
+    "rajasthani"
+   ],
+   "firstLine": 79,
+   "lastLine": 86
+  },
+  {
+   "n": 11,
+   "number": 11,
+   "title": "SANSKRIT SHLOK",
+   "cueIds": [
+    16,
+    17
+   ],
+   "soundIds": [
+    "haha"
+   ],
+   "firstLine": 87,
+   "lastLine": 93
+  },
+  {
+   "n": 12,
+   "number": 12,
+   "title": "Import and Export",
+   "cueIds": [
+    18,
+    19
+   ],
+   "soundIds": [
+    "haha",
+    "smart-boy"
+   ],
+   "firstLine": 94,
+   "lastLine": 98
+  },
+  {
+   "n": 13,
+   "number": 13,
+   "title": "Heaven or A Hell?",
+   "cueIds": [
+    20
+   ],
+   "soundIds": [
+    "haha"
+   ],
+   "firstLine": 99,
+   "lastLine": 103
+  },
+  {
+   "n": 14,
+   "number": 14,
+   "title": "Chemical Formula of Water",
+   "cueIds": [
+    21,
+    22
+   ],
+   "soundIds": [
+    "south-indian",
+    "haha"
+   ],
+   "firstLine": 104,
+   "lastLine": 110
+  },
+  {
+   "n": 15,
+   "number": 15,
+   "title": "The British Arrive in India",
+   "cueIds": [
+    23,
+    24
+   ],
+   "soundIds": [
+    "rajasthani",
+    "haha"
+   ],
+   "firstLine": 111,
+   "lastLine": 115
+  },
+  {
+   "n": 16,
+   "number": 19,
+   "title": "Diwali Question",
+   "cueIds": [
+    25
+   ],
+   "soundIds": [
+    "galti"
+   ],
+   "firstLine": 116,
+   "lastLine": 125
+  }
+ ],
+ "lines": [
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "speaker": "NARRATOR",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Deviyon aur Sajjano!!! Aaj hum aapko le jaate hain ek adbhut gaon, Ghoomerabad ki anokhi Paathshaala, Guru Gul, mein, jahaan unke sarvashreshth Guruji bachchon ko gyaan baantne ki bharpoor koshish karte hain.Guruji chale hain bacchon ko Einstein banaane magar ye chhaatra to Gobar mera matlab hai Gabbar ke baap hain!!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Bachchon, aap log homework ki taiyaari karke aaye ho? Aaj main aapko kuch General Knowledge, yaane Saamaanya Gyaan, ke prashna poochhunga aur aapka homework check karunga."
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Aaj ek naya student aata hai kaksha mein."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "What is your name?"
+    }
+   ]
+  },
+  {
+   "speaker": "SUNDER",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Mera naam Sundar Lal Chadha hai."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "If I ask a question in English, please answer in English."
+    }
+   ]
+  },
+  {
+   "speaker": "SUNDER",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, my name is Beautiful Red Underwear!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Ha ha ha ha"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "What nonsense!!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Why are you transferring in middle of year?"
+    }
+   ]
+  },
+  {
+   "speaker": "SUNDER",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "my father got job transfer from Under Water to Roaming City"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Kya bakwaas hai yeh!!"
+    }
+   ]
+  },
+  {
+   "speaker": "SUNDER",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Mere pyon da tabaadla hua Jalandhar se Ghoomerabad!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 1,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Shut up and sit down"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Arre Lakhan, tumne homework kyun nahi kiya?"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, light chali gayi thi."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Toh mombatti jalaa lete?"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, maachis nahi thi."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Kyun, maachis kyun nahi thi?"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, pooja ghar mein rakhi thi."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Toh pooja ghar se le lete!"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, nahaaya nahi tha."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Ab ye nahaaye kyun nahi the?"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, paani nahi tha."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Arre, paani kyun nahi tha?"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, motor nahi chal rahi thi."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Arre yaar, ye kambakht motor kyun nahi chal rahi thi?"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, kitni baar bataun ki light hi nahi thi!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Chup nalaayak! Baith jao!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 2,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 3,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Achha Kalaam, tum batao mujhe ki ek taraf paisa ho aur doosri taraf akal, toh tum kya loge?"
+    }
+   ]
+  },
+  {
+   "speaker": "KALAAM",
+   "note": "",
+   "scene": 3,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, main toh paisa hi chununga."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 3,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Galat! Agar main tumhaari jagah hota, toh akal chunta."
+    }
+   ]
+  },
+  {
+   "speaker": "KALAAM",
+   "note": "",
+   "scene": 3,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Theek kaha, sir, aapne. Jiske paas"
+    }
+   ]
+  },
+  {
+   "speaker": "CLASS",
+   "note": "",
+   "scene": 3,
+   "segments": []
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 3,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 3,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 7
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "text",
+     "text": "(Alok is snoring and Guruji startles him) Alok, tum khade ho jao. Ye batao, kaunsa pakshi sabse tez udta hai?"
+    }
+   ]
+  },
+  {
+   "speaker": "ALOK",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, ghoda!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Chup badmaash! Ye sikhaaya hai tumhaare maa baap ne!!Tere papa kya karte hain?"
+    }
+   ]
+  },
+  {
+   "speaker": "ALOK",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, mera baap Lawrence Bishnoi gang me shooter hai."
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 8
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "text",
+     "text": "La.. la..la..la..l Lawrence Bishnoi!!   Bilkul Sahi jawaab.. Bachchon, likho, ghoda sabse tez pakshi hai!"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Fhaat gayi na …."
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 4,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 5,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Achha beta Chatur, ek baat toh batao. Kisi scientist ka naam bolo."
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 5,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 10
+    }
+   ]
+  },
+  {
+   "speaker": "CHATUR",
+   "note": "",
+   "scene": 5,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, Alia Bhatt!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 5,
+   "segments": [
+    {
+     "type": "text",
+     "text": "What nonsense! Ye sikhaata hoon main tumhein?"
+    }
+   ]
+  },
+  {
+   "speaker": "ALOK",
+   "note": "",
+   "scene": 5,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Nahi, nahi, sir. Ye toh bachpan se hi totla hai. Iska matlab hai Arya Bhatt!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 5,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Achha, achha! Theek hai, theek hai. Baith jao."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 6,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Achha Chatur, tum mujhe ye batao ki 1869 mein kya hua tha?"
+    }
+   ]
+  },
+  {
+   "speaker": "CHATUR",
+   "note": "",
+   "scene": 6,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, Gandhiji ka janam hui thi."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 6,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Shabaash, shabaash! Bilkul sahi! Achha, ek baat aur batao, 1889 mein kya hua tha?"
+    }
+   ]
+  },
+  {
+   "speaker": "CHATUR",
+   "note": "",
+   "scene": 6,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, Gandhiji bees saal ke ho gayi thi!"
+    }
+   ]
+  },
+  {
+   "speaker": "CLASS",
+   "note": "",
+   "scene": 6,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Ha ha ha ha!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 6,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Shut up.. 1889 mein Pandit Nehru ka janam hua tha"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 7,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Dekho bachchon, jo apni baat doosron ko samjha na sake, woh gadha hota hai."
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 7,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, kya matlab? Mujhe kuch samajh nahi aaya!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 7,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 11
+    }
+   ]
+  },
+  {
+   "speaker": "CLASS",
+   "note": "",
+   "scene": 7,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Ha ha ha ha!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Accha bacchon, Hindi vyakaran mein kitne prakaar ke kaal hote hain?"
+    }
+   ]
+  },
+  {
+   "speaker": "SUNDAR",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Chaar"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 12
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Chaar kahaan se paida huye?? Sirf teen hote hain."
+    }
+   ]
+  },
+  {
+   "speaker": "SUNDAR",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Naa Sirji, chaar hunde hain"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Accha bataao to zaraa"
+    }
+   ]
+  },
+  {
+   "speaker": "SUNDAR",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Bhoot kaal.. Vartamaan kaal… Bhavishya kaal…. aur…Sat Sri Akaaal!!!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 13
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 9,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Achha bachchon, main tumhe ek baat bataun. Delhi mein Qutub Minar hai"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 9,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Achha Alsi Kumar, batao, main kya keh raha tha?"
+    }
+   ]
+  },
+  {
+   "speaker": "ALSI KUMAR",
+   "note": "",
+   "scene": 9,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, aap keh rahe the ki Delhi mein kutta beemaar hai!"
+    }
+   ]
+  },
+  {
+   "speaker": "CLASS",
+   "note": "",
+   "scene": 9,
+   "segments": []
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 9,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 14
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 9,
+   "segments": [
+    {
+     "type": "text",
+     "text": "accha accha let jao.. mera matla. Baith jao"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Achha Kaleshi beta, A ke baad kya aata hai?"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 15
+    }
+   ]
+  },
+  {
+   "speaker": "KALESHI",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Guruji, A ke baad... Aaa kya bolti tu?"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Abey Sun"
+    }
+   ]
+  },
+  {
+   "speaker": "KALESHI",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Suna"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Aati Kya Khandala"
+    }
+   ]
+  },
+  {
+   "speaker": "ALL KIDS",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "text",
+     "text": "ghoomenge phirenge nachenge gaenge aish karenge aur kya"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 10,
+   "segments": [
+    {
+     "type": "text",
+     "text": "chup nalaayakon.. Jab dekho tab nautanki karte rehte ho"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 11,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Kaleshi, toh phir ye batao, Tamso Maa Jyotirgamaya ka kya matlab hai"
+    }
+   ]
+  },
+  {
+   "speaker": "KALESHI",
+   "note": "",
+   "scene": 11,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Guruji iska matlab manne lagta hai ki yeh hai “ Tu So Maa.. Manne jyoti ko ghuma ke aan de”"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 11,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 16
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 11,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Baith ja Nikamme.. Iska matlab hai “ Hummein Andhkar se Roshni ki taraf le jao”"
+    }
+   ]
+  },
+  {
+   "speaker": "CHATUR",
+   "note": "",
+   "scene": 11,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Saar yek pe rehena, ya to Jyoti bolna ya phir Roshni bolna…"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 11,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 17
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 11,
+   "segments": [
+    {
+     "type": "text",
+     "text": "shut up idiot!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 12,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Arre haan beta Kalaam, mera honhaar bachcha! Tum sabhi mein ye sabse adhik hoshiyaar hai. Achha beta, tum mujhe ye batao ki import aur export mein kya fark hota hai?"
+    }
+   ]
+  },
+  {
+   "speaker": "KALAAM",
+   "note": "",
+   "scene": 12,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, import ka matlab…. Sonia Gandhi aur export ka matlab… Sania Mirza!"
+    }
+   ]
+  },
+  {
+   "speaker": "CLASS",
+   "note": "",
+   "scene": 12,
+   "segments": []
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 12,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 18
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 12,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 19
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 13,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Koi nahi! Ye batao ki mrityu ke baad Yamraj tumhein agar swarg ya nark jaane ka poochhe, toh tum kya chunoge?"
+    }
+   ]
+  },
+  {
+   "speaker": "KALAAM",
+   "note": "",
+   "scene": 13,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, main Yamraj se kehke phone aur data plan arrange kar lunga . Phir main kahin bhi settle ho jaaunga!"
+    }
+   ]
+  },
+  {
+   "speaker": "CLASS",
+   "note": "",
+   "scene": 13,
+   "segments": []
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 13,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 20
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 13,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Beda gark!!!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Chatur, What is the chemical formula of water?"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 21
+    }
+   ]
+  },
+  {
+   "speaker": "CHATUR",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "HIJKLMNO!"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Ye kya bakwaas hai?"
+    }
+   ]
+  },
+  {
+   "speaker": "CHATUR",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, aapne hi toh kal boli thi H-to-O!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 22
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Baith jao waapas namakul"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 15,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Angrez kis shatabdi mein Bharat aaye the?"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 15,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 23
+    }
+   ]
+  },
+  {
+   "speaker": "KALESHI",
+   "note": "",
+   "scene": 15,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, woh toh manne nahi patta, par kal nau baje ki shatabdi mein do Angrez choria dekhi gaye the!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 15,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 24
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 15,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Shut up and sit down"
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Bacchon ek aakhri sawaal. Diwali kyun manaate hain?"
+    }
+   ]
+  },
+  {
+   "speaker": "ALOK",
+   "note": "(Waking up)",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir Ram ji Ayodhya waapas laute aur poore Ayodhya mein light chali gayi thi, isliye sabko diye jalaane pade"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "(jumping up and down and raising hand)",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Dekha sir!! Us samay bhi yeho samasya thi.. Ye light ka kuchh karna padega.. Main to keh tu jab tak light ki samasya ka samaadhaan nahi milta, homework band kar dena chahiye"
+    }
+   ]
+  },
+  {
+   "speaker": "KALESHI",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Bilkul, Guruji! Isiliye humne faisla kiya hai..."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Kya?"
+    }
+   ]
+  },
+  {
+   "speaker": "KALAAM",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Aajse aapki class ki batti gul karke!!"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "(Lakhan  switches off the classroom light and all students run away.)"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 25
+    }
+   ]
+  },
+  {
+   "speaker": "NARRATOR",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Toh doston, dekha aapne Guru Gul Paathshaala ke in mahaan vidyarthiyon ka gyaan? Guruji ki koshish jaari hai, aur bachchon ki masti bhi bhaari hai!"
+    }
+   ]
+  },
+  {
+   "speaker": "NARRATOR",
+   "note": "",
+   "scene": 16,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Aap sabhi ko Diwali ki haardik shubhkaamnaayein! Dhanyavaad!"
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "n": 1,
+   "placeholder": "doordarshan",
+   "soundId": "doordarshan",
+   "match": "exact",
+   "lineIndex": 0,
+   "scene": 1,
+   "trigger": {
+    "kind": "scene_start",
+    "speaker": "NARRATOR",
+    "words": ""
+   }
+  },
+  {
+   "n": 2,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 14,
+   "scene": 1,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "SUNDER",
+    "words": "Mere pyon da tabaadla hua Jalandhar se Ghoomerabad!",
+    "lineIndex": 13,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 3,
+   "placeholder": "punjabi",
+   "soundId": "punjabi",
+   "match": "exact",
+   "lineIndex": 15,
+   "scene": 1,
+   "trigger": {
+    "kind": "after_cue",
+    "cueN": 2,
+    "label": "Haha"
+   }
+  },
+  {
+   "n": 4,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 31,
+   "scene": 2,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "LAKHAN",
+    "words": "...kitni baar bataun ki light hi nahi thi!",
+    "lineIndex": 30,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 5,
+   "placeholder": "golmaal",
+   "soundId": "golmaal",
+   "match": "exact",
+   "lineIndex": 33,
+   "scene": 2,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "GURUJI",
+    "words": "Chup nalaayak! Baith jao!",
+    "lineIndex": 32,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 6,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 39,
+   "scene": 3,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "KALAAM",
+    "words": "Theek kaha, sir, aapne. Jiske paas",
+    "lineIndex": 37,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 7,
+   "placeholder": "smart_boy",
+   "soundId": "smart-boy",
+   "match": "exact",
+   "lineIndex": 40,
+   "scene": 3,
+   "trigger": {
+    "kind": "after_cue",
+    "cueN": 6,
+    "label": "Haha"
+   }
+  },
+  {
+   "n": 8,
+   "placeholder": "gunshot",
+   "soundId": "gunshot",
+   "match": "exact",
+   "lineIndex": 45,
+   "scene": 4,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "ALOK",
+    "words": "...mera baap Lawrence Bishnoi gang me shooter hai.",
+    "lineIndex": 44,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 9,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 48,
+   "scene": 4,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "LAKHAN",
+    "words": "Fhaat gayi na ….",
+    "lineIndex": 47,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 10,
+   "placeholder": "south_indian",
+   "soundId": "south-indian",
+   "match": "exact",
+   "lineIndex": 50,
+   "scene": 5,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "GURUJI",
+    "words": "...baat toh batao. Kisi scientist ka naam bolo.",
+    "lineIndex": 49,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 11,
+   "placeholder": "donkey",
+   "soundId": "donkey",
+   "match": "exact",
+   "lineIndex": 63,
+   "scene": 7,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "LAKHAN",
+    "words": "Sir, kya matlab? Mujhe kuch samajh nahi aaya!",
+    "lineIndex": 62,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 12,
+   "placeholder": "punjabi_style",
+   "soundId": "punjabi-style",
+   "match": "exact",
+   "lineIndex": 67,
+   "scene": 8,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "SUNDAR",
+    "words": "Chaar",
+    "lineIndex": 66,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 13,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 72,
+   "scene": 8,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "SUNDAR",
+    "words": "...kaal.. Vartamaan kaal… Bhavishya kaal…. aur…Sat Sri Akaaal!!!",
+    "lineIndex": 71,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 14,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 77,
+   "scene": 9,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "ALSI KUMAR",
+    "words": "...rahe the ki Delhi mein kutta beemaar hai!",
+    "lineIndex": 75,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 15,
+   "placeholder": "rajasthani",
+   "soundId": "rajasthani",
+   "match": "exact",
+   "lineIndex": 80,
+   "scene": 10,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "GURUJI",
+    "words": "...Kaleshi beta, A ke baad kya aata hai?",
+    "lineIndex": 79,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 16,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 89,
+   "scene": 11,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "KALESHI",
+    "words": "...Maa.. Manne jyoti ko ghuma ke aan de”",
+    "lineIndex": 88,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 17,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 92,
+   "scene": 11,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "CHATUR",
+    "words": "...ya to Jyoti bolna ya phir Roshni bolna…",
+    "lineIndex": 91,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 18,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 97,
+   "scene": 12,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "KALAAM",
+    "words": "...Sonia Gandhi aur export ka matlab… Sania Mirza!",
+    "lineIndex": 95,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 19,
+   "placeholder": "smart_boy",
+   "soundId": "smart-boy",
+   "match": "exact",
+   "lineIndex": 98,
+   "scene": 12,
+   "trigger": {
+    "kind": "after_cue",
+    "cueN": 18,
+    "label": "Haha"
+   }
+  },
+  {
+   "n": 20,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 102,
+   "scene": 13,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "KALAAM",
+    "words": ".... Phir main kahin bhi settle ho jaaunga!",
+    "lineIndex": 100,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 21,
+   "placeholder": "south_indian",
+   "soundId": "south-indian",
+   "match": "exact",
+   "lineIndex": 105,
+   "scene": 14,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "GURUJI",
+    "words": "Chatur, What is the chemical formula of water?",
+    "lineIndex": 104,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 22,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 109,
+   "scene": 14,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "CHATUR",
+    "words": "Sir, aapne hi toh kal boli thi H-to-O!",
+    "lineIndex": 108,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 23,
+   "placeholder": "rajasthani",
+   "soundId": "rajasthani",
+   "match": "exact",
+   "lineIndex": 112,
+   "scene": 15,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "GURUJI",
+    "words": "Angrez kis shatabdi mein Bharat aaye the?",
+    "lineIndex": 111,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 24,
+   "placeholder": "haha",
+   "soundId": "haha",
+   "match": "exact",
+   "lineIndex": 114,
+   "scene": 15,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "KALESHI",
+    "words": "...shatabdi mein do Angrez choria dekhi gaye the!",
+    "lineIndex": 113,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 25,
+   "placeholder": "galti",
+   "soundId": "galti",
+   "match": "exact",
+   "lineIndex": 123,
+   "scene": 16,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "",
+    "words": "...the classroom light and all students run away.)",
+    "lineIndex": 122,
+    "segIndex": 0
+   }
+  }
+ ],
+ "sounds": [
+  {
+   "id": "donkey",
+   "label": "Donkey",
+   "file": "sounds/donkey.mp3"
+  },
+  {
+   "id": "doordarshan",
+   "label": "Doordarshan",
+   "file": "sounds/doordarshan.mp3"
+  },
+  {
+   "id": "galti",
+   "label": "Galti",
+   "file": "sounds/galti.mp3"
+  },
+  {
+   "id": "golmaal",
+   "label": "Golmaal",
+   "file": "sounds/golmaal.mp3"
+  },
+  {
+   "id": "gunshot",
+   "label": "Gunshot",
+   "file": "sounds/gunshot.mp3"
+  },
+  {
+   "id": "haha",
+   "label": "Haha",
+   "file": "sounds/haha.mp3"
+  },
+  {
+   "id": "punjabi",
+   "label": "Punjabi",
+   "file": "sounds/punjabi.mp3"
+  },
+  {
+   "id": "punjabi-style",
+   "label": "Punjabi style",
+   "file": "sounds/punjabi_style.mp3"
+  },
+  {
+   "id": "rajasthani",
+   "label": "Rajasthani",
+   "file": "sounds/rajasthani.mp3"
+  },
+  {
+   "id": "smart-boy",
+   "label": "Smart boy",
+   "file": "sounds/smart_boy.mp3"
+  },
+  {
+   "id": "south-indian",
+   "label": "South indian",
+   "file": "sounds/south_indian.mp3"
+  }
+ ]
+}
