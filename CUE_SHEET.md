@@ -5,7 +5,7 @@ Placeholder pattern used: `\[\s*(?:SFX|SOUND|SE|FX)\s*[:\-]?\s*([^\]]+?)\s*\]`
 | # | Sound file | Play when | How matched |
 |---|---|---|---|
 | | **Scene 1: Welcome to Guru Gul Paathshaala** | 2 cue(s) | |
-| 1 | doordarshn-5secGap-masti.mp3 | At the start of Scene 1, before NARRATOR speaks | fuzzy |
+| 1 | door-5secgap-masti.mp3 | At the start of Scene 1, before NARRATOR speaks | exact |
 | 2 | laughter-panjabi.mp3 | SUNDER: "Mere pyon da tabaadla hua Jalandhar se Ghoomerabad!" | exact |
 | | **Scene 2: Lakhan and the Homework Excuse** | 2 cue(s) | |
 | 3 | laughter.mp3 | LAKHAN: "...kitni baar bataun ki light hi nahi thi!" | exact |
@@ -39,10 +39,10 @@ Placeholder pattern used: `\[\s*(?:SFX|SOUND|SE|FX)\s*[:\-]?\s*([^\]]+?)\s*\]`
 | 19 | dhina-dhin.mp3 | LAKHAN: "...yahaan se bhi nahi dikh raha, kahaan hai!" | exact |
 | | **Scene 15: Chemical Formula of Water** | 2 cue(s) | |
 | 20 | southindian.mp3 | GURUJI: "Chatur, What is the chemical formula of water?" | fuzzy |
-| 21 | laughter.mp3 | CHATUR: "Sir, aapne hi toh kal boli thi H-to-O!" | alias |
+| 21 | laughter.mp3 | CHATUR: "Sir, aapne hi toh kal boli thi H-to-O!" | exact |
 | | **Scene 16: The British Arrive in India** | 2 cue(s) | |
 | 22 | rajesthani.mp3 | GURUJI: "Angrez kis shatabdi mein Bharat aaye the?" | fuzzy |
-| 23 | laughter.mp3 | KALESHI: "...shatabdi mein do Angrez choria dekhi gaye the!" | alias |
+| 23 | laughter.mp3 | KALESHI: "...shatabdi mein do Angrez choria dekhi gaye the!" | exact |
 | | **Scene 17: Diwali Question** | 1 cue(s) | |
 | 24 | galti.mp3 | GURUJI: "Kya?" | exact |
 

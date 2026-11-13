@@ -11,7 +11,7 @@
     2
    ],
    "soundIds": [
-    "doordarshn-5secgap-masti",
+    "door-5secgap-masti",
     "laughter-panjabi"
    ],
    "firstLine": 0,
@@ -1653,8 +1653,8 @@
   {
    "n": 1,
    "placeholder": "door-5secgap-masti",
-   "soundId": "doordarshn-5secgap-masti",
-   "match": "fuzzy",
+   "soundId": "door-5secgap-masti",
+   "match": "exact",
    "lineIndex": 0,
    "scene": 1,
    "trigger": {
@@ -1950,9 +1950,9 @@
   },
   {
    "n": 21,
-   "placeholder": "haha",
+   "placeholder": "laughter",
    "soundId": "laughter",
-   "match": "alias",
+   "match": "exact",
    "lineIndex": 113,
    "scene": 15,
    "trigger": {
@@ -1980,9 +1980,9 @@
   },
   {
    "n": 23,
-   "placeholder": "haha",
+   "placeholder": "laughter",
    "soundId": "laughter",
-   "match": "alias",
+   "match": "exact",
    "lineIndex": 118,
    "scene": 16,
    "trigger": {
@@ -2021,9 +2021,9 @@
    "file": "sounds/donkey.mp3"
   },
   {
-   "id": "doordarshn-5secgap-masti",
-   "label": "Doordarshan",
-   "file": "sounds/doordarshn-5secGap-masti.mp3"
+   "id": "door-5secgap-masti",
+   "label": "Door 5secgap masti",
+   "file": "sounds/door-5secgap-masti.mp3"
   },
   {
    "id": "galti",

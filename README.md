@@ -37,7 +37,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
 
 ## Changing the script or sounds
 
-1. Replace `input/script.docx` and/or the MP3s in `sounds/` (keep `sounds/_silence.mp3`). The script tag `haha` is mapped to `laughter.mp3` in `input/aliases.json`.
+1. Replace `input/script.docx` and/or the MP3s in `sounds/` (keep `sounds/_silence.mp3`).
 2. Rebuild the cues:
 
    ```bash
@@ -45,7 +45,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
    ```
 
 3. Check `CUE_SHEET.md`: every cue, its sound file and when to play it, grouped by scene.
-4. In `sw.js`, raise the cache number, for example `skit-soundboard-v8` to `skit-soundboard-v9`.
+4. In `sw.js`, raise the cache number, for example `skit-soundboard-v9` to `skit-soundboard-v10`.
 5. Commit and push. This updates the GitHub Pages copy.
 6. Update the Netlify copy by deploying only the app files: `index.html`, `sw.js`, `manifest.webmanifest`, `cues.json`, the three icons and `sounds/`. Leave out `input/`, `tools/`, `CUE_SHEET.md` and `.git`. Put them in one folder and run:
 
@@ -59,7 +59,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
 
 - Scenes start with a paragraph like `SCENE 3: Money or Intelligence?`.
 - Dialogue lines look like `GURUJI: words` or `Alok (waking up): words`.
-- Sound cues look like `[SFX: haha]` and match `sounds/haha.mp3`. Case, spaces, dashes and underscores are ignored.
+- Sound cues look like `[SFX: laughter]` and match `sounds/laughter.mp3`. Case, spaces, dashes and underscores are ignored.
 - If a tag and a file name differ, map them in `input/aliases.json`, for example `{"big laugh": "laughter.mp3"}`.
 - Button names come from the file names. To show a nicer name, add it to `input/labels.json`, for example `{"southindian.mp3": "South Indian"}`.
 

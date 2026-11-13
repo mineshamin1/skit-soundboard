@@ -10,8 +10,8 @@ Script conventions:
   - Dialogue: "NAME: words" (any case), optionally "Name (stage note): words".
   - Sound cues: [SFX: name], matched to sounds/<name>.mp3 (case, spaces, dashes, underscores ignored).
     Other bracket styles are auto-detected; force one with --pattern "<regex with one group>".
-  - input/aliases.json can map a tag to a file when names differ: {"big laugh": "haha.mp3"}
-  - input/labels.json can set a button name for a file: {"doordarshn-5secGap-masti.mp3": "Doordarshan"}
+  - input/aliases.json can map a tag to a file when names differ: {"big laugh": "laughter.mp3"}
+  - input/labels.json can set a button name for a file: {"southindian.mp3": "South Indian"}
 Files in the sounds folder starting with "_" are helpers and are ignored.
 """
 import argparse
