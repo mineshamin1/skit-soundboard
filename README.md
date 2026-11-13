@@ -19,7 +19,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
 - **Script** shows only the current scene. The words to wait for are highlighted in amber, followed by the green tag of the sound to play.
 - **Amber strip** above the button says exactly when to press, for example "Play right after SUNDER says ...".
 - **Big green button** plays that sound and moves to the next cue.
-- When a scene's sounds are done, the button turns purple and says **Go to Scene N**. Tap it when the next scene starts. It plays nothing. Scenes with no sounds, like Scene 6, work the same way.
+- When a scene's sounds are done, the button turns purple and says **Go to Scene N**. Tap it when the next scene starts. It plays nothing. A scene with no sounds works the same way.
 - **Quick pad** shows only this scene's sounds. Tap one to play it again right away, for example an extra laugh. It does not move the cue.
 - **Back** moves one cue back without playing. **Stop all** cuts every sound, including the long galti song.
 - **Scenes tab** lists every scene. Tap a scene to jump to it, or tap a cue in the current scene. It also has a button for every sound, for emergencies.
@@ -37,7 +37,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
 
 ## Changing the script or sounds
 
-1. Replace `input/script.docx` and/or the MP3s in `sounds/` (keep `sounds/_silence.mp3`).
+1. Replace `input/script.docx` and/or the MP3s in `sounds/` (keep `sounds/_silence.mp3`). The script tag `haha` is mapped to `laughter.mp3` in `input/aliases.json`.
 2. Rebuild the cues:
 
    ```bash
@@ -45,7 +45,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
    ```
 
 3. Check `CUE_SHEET.md`: every cue, its sound file and when to play it, grouped by scene.
-4. In `sw.js`, raise the cache number, for example `skit-soundboard-v5` to `skit-soundboard-v6`.
+4. In `sw.js`, raise the cache number, for example `skit-soundboard-v6` to `skit-soundboard-v7`.
 5. Commit and push. This updates the GitHub Pages copy.
 6. Update the Netlify copy by deploying only the app files: `index.html`, `sw.js`, `manifest.webmanifest`, `cues.json`, the three icons and `sounds/`. Leave out `input/`, `tools/`, `CUE_SHEET.md` and `.git`. Put them in one folder and run:
 
@@ -60,7 +60,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
 - Scenes start with a paragraph like `SCENE 3: Money or Intelligence?`.
 - Dialogue lines look like `GURUJI: words` or `Alok (waking up): words`.
 - Sound cues look like `[SFX: haha]` and match `sounds/haha.mp3`. Case, spaces, dashes and underscores are ignored.
-- If a tag and a file name differ, map them in `input/aliases.json`, for example `{"big laugh": "haha.mp3"}`.
+- If a tag and a file name differ, map them in `input/aliases.json`, for example `{"big laugh": "laughter.mp3"}`.
 
 ## Try it on a computer
 

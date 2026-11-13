@@ -8,82 +8,82 @@
    "title": "Welcome to Guru Gul Paathshaala",
    "cueIds": [
     1,
-    2,
-    3
+    2
    ],
    "soundIds": [
-    "doordarshan",
-    "haha",
-    "punjabi"
+    "doordarshn-5secgap-masti",
+    "laughter-panjabi"
    ],
    "firstLine": 0,
-   "lastLine": 16
+   "lastLine": 15
   },
   {
    "n": 2,
    "number": 2,
    "title": "Lakhan and the Homework Excuse",
    "cueIds": [
-    4,
-    5
+    3,
+    4
    ],
    "soundIds": [
-    "haha",
-    "golmaal"
+    "laughter",
+    "golmal"
    ],
-   "firstLine": 17,
-   "lastLine": 33
+   "firstLine": 16,
+   "lastLine": 32
   },
   {
    "n": 3,
    "number": 3,
    "title": "Money or Intelligence?",
    "cueIds": [
-    6,
-    7
+    5
    ],
    "soundIds": [
-    "haha",
-    "smart-boy"
+    "laughter-smartboy"
    ],
-   "firstLine": 34,
-   "lastLine": 40
+   "firstLine": 33,
+   "lastLine": 38
   },
   {
    "n": 4,
    "number": 4,
    "title": "The Fastest Bird and a Dangerous Father",
    "cueIds": [
-    8,
-    9
+    6,
+    7
    ],
    "soundIds": [
     "gunshot",
-    "haha"
+    "laughter"
    ],
-   "firstLine": 41,
-   "lastLine": 48
+   "firstLine": 39,
+   "lastLine": 46
   },
   {
    "n": 5,
    "number": 5,
    "title": "The Scientist's Name",
    "cueIds": [
-    10
+    8
    ],
    "soundIds": [
-    "south-indian"
+    "southindian"
    ],
-   "firstLine": 49,
-   "lastLine": 54
+   "firstLine": 47,
+   "lastLine": 53
   },
   {
    "n": 6,
    "number": 6,
    "title": "Gandhi Ji's Birthday",
-   "cueIds": [],
-   "soundIds": [],
-   "firstLine": 55,
+   "cueIds": [
+    9
+   ],
+   "soundIds": [
+    "laughter"
+   ],
+   "firstLine": 54,
    "lastLine": 60
   },
   {
@@ -91,7 +91,7 @@
    "number": 7,
    "title": "The Donkey and Understanding",
    "cueIds": [
-    11
+    10
    ],
    "soundIds": [
     "donkey"
@@ -104,12 +104,12 @@
    "number": 8,
    "title": "Four forms of tense (alternate)",
    "cueIds": [
-    12,
-    13
+    11,
+    12
    ],
    "soundIds": [
-    "punjabi-style",
-    "haha"
+    "punjabi",
+    "laughter"
    ],
    "firstLine": 65,
    "lastLine": 72
@@ -119,10 +119,10 @@
    "number": 9,
    "title": "Qutub Minar or a Sick Dog?",
    "cueIds": [
-    14
+    13
    ],
    "soundIds": [
-    "haha"
+    "laughter"
    ],
    "firstLine": 73,
    "lastLine": 78
@@ -132,10 +132,10 @@
    "number": 10,
    "title": "English Lessons with Kaleshi",
    "cueIds": [
-    15
+    14
    ],
    "soundIds": [
-    "rajasthani"
+    "rajesthani"
    ],
    "firstLine": 79,
    "lastLine": 86
@@ -145,11 +145,11 @@
    "number": 11,
    "title": "SANSKRIT SHLOK",
    "cueIds": [
-    16,
-    17
+    15,
+    16
    ],
    "soundIds": [
-    "haha"
+    "laughter"
    ],
    "firstLine": 87,
    "lastLine": 93
@@ -159,71 +159,82 @@
    "number": 12,
    "title": "Import and Export",
    "cueIds": [
-    18,
-    19
+    17
    ],
    "soundIds": [
-    "haha",
-    "smart-boy"
+    "laughter-smartboy"
    ],
    "firstLine": 94,
-   "lastLine": 98
+   "lastLine": 97
   },
   {
    "n": 13,
    "number": 13,
    "title": "Heaven or A Hell?",
    "cueIds": [
-    20
+    18
    ],
    "soundIds": [
-    "haha"
+    "laughter"
    ],
-   "firstLine": 99,
-   "lastLine": 103
+   "firstLine": 98,
+   "lastLine": 102
   },
   {
    "n": 14,
    "number": 14,
-   "title": "Chemical Formula of Water",
+   "title": "Darjeeling",
    "cueIds": [
-    21,
-    22
+    19
    ],
    "soundIds": [
-    "south-indian",
-    "haha"
+    "dhina-dhin"
    ],
-   "firstLine": 104,
-   "lastLine": 110
+   "firstLine": 103,
+   "lastLine": 107
   },
   {
    "n": 15,
    "number": 15,
-   "title": "The British Arrive in India",
+   "title": "Chemical Formula of Water",
    "cueIds": [
-    23,
-    24
+    20,
+    21
    ],
    "soundIds": [
-    "rajasthani",
-    "haha"
+    "southindian",
+    "laughter"
    ],
-   "firstLine": 111,
-   "lastLine": 115
+   "firstLine": 108,
+   "lastLine": 114
   },
   {
    "n": 16,
-   "number": 19,
+   "number": 16,
+   "title": "The British Arrive in India",
+   "cueIds": [
+    22,
+    23
+   ],
+   "soundIds": [
+    "rajesthani",
+    "laughter"
+   ],
+   "firstLine": 115,
+   "lastLine": 119
+  },
+  {
+   "n": 17,
+   "number": 17,
    "title": "Diwali Question",
    "cueIds": [
-    25
+    24
    ],
    "soundIds": [
     "galti"
    ],
-   "firstLine": 116,
-   "lastLine": 125
+   "firstLine": 120,
+   "lastLine": 129
   }
  ],
  "lines": [
@@ -389,17 +400,6 @@
     {
      "type": "cue",
      "n": 2
-    }
-   ]
-  },
-  {
-   "speaker": "",
-   "note": "",
-   "scene": 1,
-   "segments": [
-    {
-     "type": "cue",
-     "n": 3
     }
    ]
   },
@@ -575,7 +575,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 4
+     "n": 3
     }
    ]
   },
@@ -597,7 +597,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 5
+     "n": 4
     }
    ]
   },
@@ -658,18 +658,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 6
-    }
-   ]
-  },
-  {
-   "speaker": "",
-   "note": "",
-   "scene": 3,
-   "segments": [
-    {
-     "type": "cue",
-     "n": 7
+     "n": 5
     }
    ]
   },
@@ -724,7 +713,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 8
+     "n": 6
     }
    ]
   },
@@ -757,7 +746,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 9
+     "n": 7
     }
    ]
   },
@@ -768,7 +757,7 @@
    "segments": [
     {
      "type": "text",
-     "text": "Achha beta Chatur, ek baat toh batao. Kisi scientist ka naam bolo."
+     "text": "Achha beta Chatur"
     }
    ]
   },
@@ -779,7 +768,18 @@
    "segments": [
     {
      "type": "cue",
-     "n": 10
+     "n": 8
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 5,
+   "segments": [
+    {
+     "type": "text",
+     "text": "ek baat toh batao. Kisi scientist ka naam bolo."
     }
    ]
   },
@@ -883,6 +883,17 @@
    ]
   },
   {
+   "speaker": "",
+   "note": "",
+   "scene": 6,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 9
+    }
+   ]
+  },
+  {
    "speaker": "GURUJI",
    "note": "",
    "scene": 6,
@@ -922,7 +933,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 11
+     "n": 10
     }
    ]
   },
@@ -949,6 +960,17 @@
    ]
   },
   {
+   "speaker": "",
+   "note": "",
+   "scene": 8,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 11
+    }
+   ]
+  },
+  {
    "speaker": "SUNDAR",
    "note": "",
    "scene": 8,
@@ -956,17 +978,6 @@
     {
      "type": "text",
      "text": "Chaar"
-    }
-   ]
-  },
-  {
-   "speaker": "",
-   "note": "",
-   "scene": 8,
-   "segments": [
-    {
-     "type": "cue",
-     "n": 12
     }
    ]
   },
@@ -1021,7 +1032,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 13
+     "n": 12
     }
    ]
   },
@@ -1071,7 +1082,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 14
+     "n": 13
     }
    ]
   },
@@ -1104,7 +1115,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 15
+     "n": 14
     }
    ]
   },
@@ -1203,7 +1214,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 16
+     "n": 15
     }
    ]
   },
@@ -1236,7 +1247,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 17
+     "n": 16
     }
    ]
   },
@@ -1286,18 +1297,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 18
-    }
-   ]
-  },
-  {
-   "speaker": "",
-   "note": "",
-   "scene": 12,
-   "segments": [
-    {
-     "type": "cue",
-     "n": 19
+     "n": 17
     }
    ]
   },
@@ -1336,7 +1336,7 @@
    "segments": [
     {
      "type": "cue",
-     "n": 20
+     "n": 18
     }
    ]
   },
@@ -1358,7 +1358,40 @@
    "segments": [
     {
      "type": "text",
-     "text": "Chatur, What is the chemical formula of water?"
+     "text": "Lakhan, ye batao, Darjeeling kahaan hai?"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, pata nahi."
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Pata nahi?! Kursi pe khade ho jao!"
+    }
+   ]
+  },
+  {
+   "speaker": "LAKHAN",
+   "note": "",
+   "scene": 14,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Sir, yahaan se bhi nahi dikh raha, kahaan hai!"
     }
    ]
   },
@@ -1369,14 +1402,36 @@
    "segments": [
     {
      "type": "cue",
-     "n": 21
+     "n": 19
+    }
+   ]
+  },
+  {
+   "speaker": "GURUJI",
+   "note": "",
+   "scene": 15,
+   "segments": [
+    {
+     "type": "text",
+     "text": "Chatur, What is the chemical formula of water?"
+    }
+   ]
+  },
+  {
+   "speaker": "",
+   "note": "",
+   "scene": 15,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 20
     }
    ]
   },
   {
    "speaker": "CHATUR",
    "note": "",
-   "scene": 14,
+   "scene": 15,
    "segments": [
     {
      "type": "text",
@@ -1387,7 +1442,7 @@
   {
    "speaker": "GURUJI",
    "note": "",
-   "scene": 14,
+   "scene": 15,
    "segments": [
     {
      "type": "text",
@@ -1398,7 +1453,7 @@
   {
    "speaker": "CHATUR",
    "note": "",
-   "scene": 14,
+   "scene": 15,
    "segments": [
     {
      "type": "text",
@@ -1409,18 +1464,18 @@
   {
    "speaker": "",
    "note": "",
-   "scene": 14,
+   "scene": 15,
    "segments": [
     {
      "type": "cue",
-     "n": 22
+     "n": 21
     }
    ]
   },
   {
    "speaker": "GURUJI",
    "note": "",
-   "scene": 14,
+   "scene": 15,
    "segments": [
     {
      "type": "text",
@@ -1431,7 +1486,7 @@
   {
    "speaker": "GURUJI",
    "note": "",
-   "scene": 15,
+   "scene": 16,
    "segments": [
     {
      "type": "text",
@@ -1442,18 +1497,18 @@
   {
    "speaker": "",
    "note": "",
-   "scene": 15,
+   "scene": 16,
    "segments": [
     {
      "type": "cue",
-     "n": 23
+     "n": 22
     }
    ]
   },
   {
    "speaker": "KALESHI",
    "note": "",
-   "scene": 15,
+   "scene": 16,
    "segments": [
     {
      "type": "text",
@@ -1464,18 +1519,18 @@
   {
    "speaker": "",
    "note": "",
-   "scene": 15,
+   "scene": 16,
    "segments": [
     {
      "type": "cue",
-     "n": 24
+     "n": 23
     }
    ]
   },
   {
    "speaker": "GURUJI",
    "note": "",
-   "scene": 15,
+   "scene": 16,
    "segments": [
     {
      "type": "text",
@@ -1486,7 +1541,7 @@
   {
    "speaker": "GURUJI",
    "note": "",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1497,7 +1552,7 @@
   {
    "speaker": "ALOK",
    "note": "(Waking up)",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1508,7 +1563,7 @@
   {
    "speaker": "LAKHAN",
    "note": "(jumping up and down and raising hand)",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1519,7 +1574,7 @@
   {
    "speaker": "KALESHI",
    "note": "",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1530,7 +1585,7 @@
   {
    "speaker": "GURUJI",
    "note": "",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1539,9 +1594,20 @@
    ]
   },
   {
+   "speaker": "",
+   "note": "",
+   "scene": 17,
+   "segments": [
+    {
+     "type": "cue",
+     "n": 24
+    }
+   ]
+  },
+  {
    "speaker": "KALAAM",
    "note": "",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1552,7 +1618,7 @@
   {
    "speaker": "",
    "note": "",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1561,20 +1627,9 @@
    ]
   },
   {
-   "speaker": "",
-   "note": "",
-   "scene": 16,
-   "segments": [
-    {
-     "type": "cue",
-     "n": 25
-    }
-   ]
-  },
-  {
    "speaker": "NARRATOR",
    "note": "",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1585,7 +1640,7 @@
   {
    "speaker": "NARRATOR",
    "note": "",
-   "scene": 16,
+   "scene": 17,
    "segments": [
     {
      "type": "text",
@@ -1597,8 +1652,8 @@
  "cues": [
   {
    "n": 1,
-   "placeholder": "doordarshan",
-   "soundId": "doordarshan",
+   "placeholder": "doordarshn-5secGap-masti",
+   "soundId": "doordarshn-5secgap-masti",
    "match": "exact",
    "lineIndex": 0,
    "scene": 1,
@@ -1610,8 +1665,8 @@
   },
   {
    "n": 2,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "placeholder": "laughter-panjabi",
+   "soundId": "laughter-panjabi",
    "match": "exact",
    "lineIndex": 14,
    "scene": 1,
@@ -1625,122 +1680,111 @@
   },
   {
    "n": 3,
-   "placeholder": "punjabi",
-   "soundId": "punjabi",
+   "placeholder": "laughter",
+   "soundId": "laughter",
    "match": "exact",
-   "lineIndex": 15,
-   "scene": 1,
-   "trigger": {
-    "kind": "after_cue",
-    "cueN": 2,
-    "label": "Haha"
-   }
-  },
-  {
-   "n": 4,
-   "placeholder": "haha",
-   "soundId": "haha",
-   "match": "exact",
-   "lineIndex": 31,
+   "lineIndex": 30,
    "scene": 2,
    "trigger": {
     "kind": "after_words",
     "speaker": "LAKHAN",
     "words": "...kitni baar bataun ki light hi nahi thi!",
-    "lineIndex": 30,
+    "lineIndex": 29,
     "segIndex": 0
    }
   },
   {
-   "n": 5,
-   "placeholder": "golmaal",
-   "soundId": "golmaal",
+   "n": 4,
+   "placeholder": "golmal",
+   "soundId": "golmal",
    "match": "exact",
-   "lineIndex": 33,
+   "lineIndex": 32,
    "scene": 2,
    "trigger": {
     "kind": "after_words",
     "speaker": "GURUJI",
     "words": "Chup nalaayak! Baith jao!",
-    "lineIndex": 32,
+    "lineIndex": 31,
     "segIndex": 0
    }
   },
   {
-   "n": 6,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "n": 5,
+   "placeholder": "laughter-smartboy",
+   "soundId": "laughter-smartboy",
    "match": "exact",
-   "lineIndex": 39,
+   "lineIndex": 38,
    "scene": 3,
    "trigger": {
     "kind": "after_words",
     "speaker": "KALAAM",
     "words": "Theek kaha, sir, aapne. Jiske paas",
-    "lineIndex": 37,
+    "lineIndex": 36,
     "segIndex": 0
    }
   },
   {
-   "n": 7,
-   "placeholder": "smart_boy",
-   "soundId": "smart-boy",
-   "match": "exact",
-   "lineIndex": 40,
-   "scene": 3,
-   "trigger": {
-    "kind": "after_cue",
-    "cueN": 6,
-    "label": "Haha"
-   }
-  },
-  {
-   "n": 8,
+   "n": 6,
    "placeholder": "gunshot",
    "soundId": "gunshot",
    "match": "exact",
-   "lineIndex": 45,
+   "lineIndex": 43,
    "scene": 4,
    "trigger": {
     "kind": "after_words",
     "speaker": "ALOK",
     "words": "...mera baap Lawrence Bishnoi gang me shooter hai.",
-    "lineIndex": 44,
+    "lineIndex": 42,
     "segIndex": 0
    }
   },
   {
-   "n": 9,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "n": 7,
+   "placeholder": "laughter",
+   "soundId": "laughter",
    "match": "exact",
-   "lineIndex": 48,
+   "lineIndex": 46,
    "scene": 4,
    "trigger": {
     "kind": "after_words",
     "speaker": "LAKHAN",
     "words": "Fhaat gayi na ….",
+    "lineIndex": 45,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 8,
+   "placeholder": "southindian",
+   "soundId": "southindian",
+   "match": "exact",
+   "lineIndex": 48,
+   "scene": 5,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "GURUJI",
+    "words": "Achha beta Chatur",
     "lineIndex": 47,
     "segIndex": 0
    }
   },
   {
-   "n": 10,
-   "placeholder": "south_indian",
-   "soundId": "south-indian",
-   "match": "exact",
-   "lineIndex": 50,
-   "scene": 5,
+   "n": 9,
+   "placeholder": "laugher",
+   "soundId": "laughter",
+   "match": "fuzzy",
+   "lineIndex": 59,
+   "scene": 6,
    "trigger": {
     "kind": "after_words",
-    "speaker": "GURUJI",
-    "words": "...baat toh batao. Kisi scientist ka naam bolo.",
-    "lineIndex": 49,
+    "speaker": "CLASS",
+    "words": "Ha ha ha ha!",
+    "lineIndex": 58,
     "segIndex": 0
    }
   },
   {
-   "n": 11,
+   "n": 10,
    "placeholder": "donkey",
    "soundId": "donkey",
    "match": "exact",
@@ -1755,24 +1799,24 @@
    }
   },
   {
-   "n": 12,
-   "placeholder": "punjabi_style",
-   "soundId": "punjabi-style",
+   "n": 11,
+   "placeholder": "punjabi",
+   "soundId": "punjabi",
    "match": "exact",
-   "lineIndex": 67,
+   "lineIndex": 66,
    "scene": 8,
    "trigger": {
     "kind": "after_words",
-    "speaker": "SUNDAR",
-    "words": "Chaar",
-    "lineIndex": 66,
+    "speaker": "GURUJI",
+    "words": "...vyakaran mein kitne prakaar ke kaal hote hain?",
+    "lineIndex": 65,
     "segIndex": 0
    }
   },
   {
-   "n": 13,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "n": 12,
+   "placeholder": "laughter",
+   "soundId": "laughter",
    "match": "exact",
    "lineIndex": 72,
    "scene": 8,
@@ -1785,9 +1829,9 @@
    }
   },
   {
-   "n": 14,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "n": 13,
+   "placeholder": "laughter",
+   "soundId": "laughter",
    "match": "exact",
    "lineIndex": 77,
    "scene": 9,
@@ -1800,10 +1844,10 @@
    }
   },
   {
-   "n": 15,
+   "n": 14,
    "placeholder": "rajasthani",
-   "soundId": "rajasthani",
-   "match": "exact",
+   "soundId": "rajesthani",
+   "match": "fuzzy",
    "lineIndex": 80,
    "scene": 10,
    "trigger": {
@@ -1815,9 +1859,9 @@
    }
   },
   {
-   "n": 16,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "n": 15,
+   "placeholder": "laughter",
+   "soundId": "laughter",
    "match": "exact",
    "lineIndex": 89,
    "scene": 11,
@@ -1830,9 +1874,9 @@
    }
   },
   {
-   "n": 17,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "n": 16,
+   "placeholder": "laughter",
+   "soundId": "laughter",
    "match": "exact",
    "lineIndex": 92,
    "scene": 11,
@@ -1845,9 +1889,9 @@
    }
   },
   {
-   "n": 18,
-   "placeholder": "haha",
-   "soundId": "haha",
+   "n": 17,
+   "placeholder": "laughter-smartboy",
+   "soundId": "laughter-smartboy",
    "match": "exact",
    "lineIndex": 97,
    "scene": 12,
@@ -1860,119 +1904,126 @@
    }
   },
   {
-   "n": 19,
-   "placeholder": "smart_boy",
-   "soundId": "smart-boy",
-   "match": "exact",
-   "lineIndex": 98,
-   "scene": 12,
-   "trigger": {
-    "kind": "after_cue",
-    "cueN": 18,
-    "label": "Haha"
-   }
-  },
-  {
-   "n": 20,
-   "placeholder": "haha",
-   "soundId": "haha",
-   "match": "exact",
-   "lineIndex": 102,
+   "n": 18,
+   "placeholder": "laugher",
+   "soundId": "laughter",
+   "match": "fuzzy",
+   "lineIndex": 101,
    "scene": 13,
    "trigger": {
     "kind": "after_words",
     "speaker": "KALAAM",
     "words": ".... Phir main kahin bhi settle ho jaaunga!",
-    "lineIndex": 100,
+    "lineIndex": 99,
     "segIndex": 0
    }
   },
   {
-   "n": 21,
-   "placeholder": "south_indian",
-   "soundId": "south-indian",
+   "n": 19,
+   "placeholder": "dhina-dhin",
+   "soundId": "dhina-dhin",
    "match": "exact",
-   "lineIndex": 105,
+   "lineIndex": 107,
    "scene": 14,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "LAKHAN",
+    "words": "...yahaan se bhi nahi dikh raha, kahaan hai!",
+    "lineIndex": 106,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 20,
+   "placeholder": "south_indian",
+   "soundId": "southindian",
+   "match": "fuzzy",
+   "lineIndex": 109,
+   "scene": 15,
    "trigger": {
     "kind": "after_words",
     "speaker": "GURUJI",
     "words": "Chatur, What is the chemical formula of water?",
-    "lineIndex": 104,
-    "segIndex": 0
-   }
-  },
-  {
-   "n": 22,
-   "placeholder": "haha",
-   "soundId": "haha",
-   "match": "exact",
-   "lineIndex": 109,
-   "scene": 14,
-   "trigger": {
-    "kind": "after_words",
-    "speaker": "CHATUR",
-    "words": "Sir, aapne hi toh kal boli thi H-to-O!",
     "lineIndex": 108,
     "segIndex": 0
    }
   },
   {
-   "n": 23,
-   "placeholder": "rajasthani",
-   "soundId": "rajasthani",
-   "match": "exact",
-   "lineIndex": 112,
+   "n": 21,
+   "placeholder": "haha",
+   "soundId": "laughter",
+   "match": "alias",
+   "lineIndex": 113,
    "scene": 15,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "CHATUR",
+    "words": "Sir, aapne hi toh kal boli thi H-to-O!",
+    "lineIndex": 112,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 22,
+   "placeholder": "rajasthani",
+   "soundId": "rajesthani",
+   "match": "fuzzy",
+   "lineIndex": 116,
+   "scene": 16,
    "trigger": {
     "kind": "after_words",
     "speaker": "GURUJI",
     "words": "Angrez kis shatabdi mein Bharat aaye the?",
-    "lineIndex": 111,
+    "lineIndex": 115,
+    "segIndex": 0
+   }
+  },
+  {
+   "n": 23,
+   "placeholder": "haha",
+   "soundId": "laughter",
+   "match": "alias",
+   "lineIndex": 118,
+   "scene": 16,
+   "trigger": {
+    "kind": "after_words",
+    "speaker": "KALESHI",
+    "words": "...shatabdi mein do Angrez choria dekhi gaye the!",
+    "lineIndex": 117,
     "segIndex": 0
    }
   },
   {
    "n": 24,
-   "placeholder": "haha",
-   "soundId": "haha",
-   "match": "exact",
-   "lineIndex": 114,
-   "scene": 15,
-   "trigger": {
-    "kind": "after_words",
-    "speaker": "KALESHI",
-    "words": "...shatabdi mein do Angrez choria dekhi gaye the!",
-    "lineIndex": 113,
-    "segIndex": 0
-   }
-  },
-  {
-   "n": 25,
    "placeholder": "galti",
    "soundId": "galti",
    "match": "exact",
-   "lineIndex": 123,
-   "scene": 16,
+   "lineIndex": 125,
+   "scene": 17,
    "trigger": {
     "kind": "after_words",
-    "speaker": "",
-    "words": "...the classroom light and all students run away.)",
-    "lineIndex": 122,
+    "speaker": "GURUJI",
+    "words": "Kya?",
+    "lineIndex": 124,
     "segIndex": 0
    }
   }
  ],
  "sounds": [
   {
+   "id": "dhina-dhin",
+   "label": "Dhina dhin",
+   "file": "sounds/dhina-dhin.mp3"
+  },
+  {
    "id": "donkey",
    "label": "Donkey",
    "file": "sounds/donkey.mp3"
   },
   {
-   "id": "doordarshan",
-   "label": "Doordarshan",
-   "file": "sounds/doordarshan.mp3"
+   "id": "doordarshn-5secgap-masti",
+   "label": "Doordarshn 5secgap masti",
+   "file": "sounds/doordarshn-5secGap-masti.mp3"
   },
   {
    "id": "galti",
@@ -1980,9 +2031,9 @@
    "file": "sounds/galti.mp3"
   },
   {
-   "id": "golmaal",
-   "label": "Golmaal",
-   "file": "sounds/golmaal.mp3"
+   "id": "golmal",
+   "label": "Golmal",
+   "file": "sounds/golmal.mp3"
   },
   {
    "id": "gunshot",
@@ -1990,9 +2041,19 @@
    "file": "sounds/gunshot.mp3"
   },
   {
-   "id": "haha",
-   "label": "Haha",
-   "file": "sounds/haha.mp3"
+   "id": "laughter-panjabi",
+   "label": "Laughter panjabi",
+   "file": "sounds/laughter-panjabi.mp3"
+  },
+  {
+   "id": "laughter-smartboy",
+   "label": "Laughter smartboy",
+   "file": "sounds/laughter-smartboy.mp3"
+  },
+  {
+   "id": "laughter",
+   "label": "Laughter",
+   "file": "sounds/laughter.mp3"
   },
   {
    "id": "punjabi",
@@ -2000,24 +2061,14 @@
    "file": "sounds/punjabi.mp3"
   },
   {
-   "id": "punjabi-style",
-   "label": "Punjabi style",
-   "file": "sounds/punjabi_style.mp3"
+   "id": "rajesthani",
+   "label": "Rajesthani",
+   "file": "sounds/rajesthani.mp3"
   },
   {
-   "id": "rajasthani",
-   "label": "Rajasthani",
-   "file": "sounds/rajasthani.mp3"
-  },
-  {
-   "id": "smart-boy",
-   "label": "Smart boy",
-   "file": "sounds/smart_boy.mp3"
-  },
-  {
-   "id": "south-indian",
-   "label": "South indian",
-   "file": "sounds/south_indian.mp3"
+   "id": "southindian",
+   "label": "Southindian",
+   "file": "sounds/southindian.mp3"
   }
  ]
 }
