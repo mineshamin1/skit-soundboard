@@ -45,12 +45,12 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
    ```
 
 3. Check `CUE_SHEET.md`: every cue, its sound file and when to play it, grouped by scene.
-4. In `sw.js`, raise the cache number, for example `skit-soundboard-v6` to `skit-soundboard-v7`.
+4. In `sw.js`, raise the cache number, for example `skit-soundboard-v7` to `skit-soundboard-v8`.
 5. Commit and push. This updates the GitHub Pages copy.
 6. Update the Netlify copy by deploying only the app files: `index.html`, `sw.js`, `manifest.webmanifest`, `cues.json`, the three icons and `sounds/`. Leave out `input/`, `tools/`, `CUE_SHEET.md` and `.git`. Put them in one folder and run:
 
    ```bash
-   npx netlify-cli deploy --prod --dir <that folder> --site diwali-skit-sounds
+   npx netlify-cli deploy --prod --dir <that folder> --site c8c83116-58d4-4d5f-80e2-a8b915c73b21
    ```
 
 7. Open the app once on the phone while online so it downloads the new version.
@@ -61,6 +61,7 @@ The same app is also served from GitHub Pages at https://mineshamin1.github.io/s
 - Dialogue lines look like `GURUJI: words` or `Alok (waking up): words`.
 - Sound cues look like `[SFX: haha]` and match `sounds/haha.mp3`. Case, spaces, dashes and underscores are ignored.
 - If a tag and a file name differ, map them in `input/aliases.json`, for example `{"big laugh": "laughter.mp3"}`.
+- Button names come from the file names. To show a nicer name, add it to `input/labels.json`, for example `{"southindian.mp3": "South Indian"}`.
 
 ## Try it on a computer
 

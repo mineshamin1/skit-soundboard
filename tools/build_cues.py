@@ -11,6 +11,7 @@ Script conventions:
   - Sound cues: [SFX: name], matched to sounds/<name>.mp3 (case, spaces, dashes, underscores ignored).
     Other bracket styles are auto-detected; force one with --pattern "<regex with one group>".
   - input/aliases.json can map a tag to a file when names differ: {"big laugh": "haha.mp3"}
+  - input/labels.json can set a button name for a file: {"doordarshn-5secGap-masti.mp3": "Doordarshan"}
 Files in the sounds folder starting with "_" are helpers and are ignored.
 """
 import argparse
@@ -142,6 +143,14 @@ def main():
     sounds = load_sounds(args.sounds)
     if not sounds:
         sys.exit(f"No audio files found in {args.sounds}")
+    labels_path = os.path.join(os.path.dirname(args.aliases) or ".", "labels.json")
+    if os.path.exists(labels_path):
+        with open(labels_path, encoding="utf-8") as f:
+            labels = json.load(f)
+        for s in sounds:
+            name = os.path.basename(s["file"])
+            if name in labels:
+                s["label"] = labels[name]
     sound_by_id = {s["id"]: s for s in sounds}
 
     setting = []

@@ -2022,7 +2022,7 @@
   },
   {
    "id": "doordarshn-5secgap-masti",
-   "label": "Doordarshn 5secgap masti",
+   "label": "Doordarshan",
    "file": "sounds/doordarshn-5secGap-masti.mp3"
   },
   {
@@ -2032,7 +2032,7 @@
   },
   {
    "id": "golmal",
-   "label": "Golmal",
+   "label": "Golmaal",
    "file": "sounds/golmal.mp3"
   },
   {
@@ -2042,12 +2042,12 @@
   },
   {
    "id": "laughter-panjabi",
-   "label": "Laughter panjabi",
+   "label": "Punjabi laugh",
    "file": "sounds/laughter-panjabi.mp3"
   },
   {
    "id": "laughter-smartboy",
-   "label": "Laughter smartboy",
+   "label": "Smart boy laugh",
    "file": "sounds/laughter-smartboy.mp3"
   },
   {
@@ -2062,12 +2062,12 @@
   },
   {
    "id": "rajesthani",
-   "label": "Rajesthani",
+   "label": "Rajasthani",
    "file": "sounds/rajesthani.mp3"
   },
   {
    "id": "southindian",
-   "label": "Southindian",
+   "label": "South Indian",
    "file": "sounds/southindian.mp3"
   }
  ]
