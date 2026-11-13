@@ -5,7 +5,7 @@ Placeholder pattern used: `\[\s*(?:SFX|SOUND|SE|FX)\s*[:\-]?\s*([^\]]+?)\s*\]`
 | # | Sound file | Play when | How matched |
 |---|---|---|---|
 | | **Scene 1: Welcome to Guru Gul Paathshaala** | 2 cue(s) | |
-| 1 | doordarshn-5secGap-masti.mp3 | At the start of Scene 1, before NARRATOR speaks | exact |
+| 1 | doordarshn-5secGap-masti.mp3 | At the start of Scene 1, before NARRATOR speaks | fuzzy |
 | 2 | laughter-panjabi.mp3 | SUNDER: "Mere pyon da tabaadla hua Jalandhar se Ghoomerabad!" | exact |
 | | **Scene 2: Lakhan and the Homework Excuse** | 2 cue(s) | |
 | 3 | laughter.mp3 | LAKHAN: "...kitni baar bataun ki light hi nahi thi!" | exact |

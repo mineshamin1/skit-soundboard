@@ -1652,9 +1652,9 @@
  "cues": [
   {
    "n": 1,
-   "placeholder": "doordarshn-5secGap-masti",
+   "placeholder": "door-5secgap-masti",
    "soundId": "doordarshn-5secgap-masti",
-   "match": "exact",
+   "match": "fuzzy",
    "lineIndex": 0,
    "scene": 1,
    "trigger": {
